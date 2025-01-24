@@ -204,7 +204,7 @@ main {
     justify-content: center;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-sized columns */
     gap: 10%;
     grid-auto-flow: row;
     margin-top: 5%;
@@ -247,10 +247,12 @@ main {
 
 .text-contacts {
     display: flex;
+    align-items: center;
 }
 
 .contact-item {
     display: flex;
+    align-items: center;
     /* border:2px solid red; */
 }
 
@@ -259,8 +261,7 @@ main {
     font-family: 'Merriweather', serif;
     color: #b0c4e5;
     text-decoration: none;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 10px 10px 10px 10px;
 }
 
 .bold {
@@ -282,6 +283,7 @@ main {
     background-color: #282828  ;
     display: flex;
     justify-content: space-between;
+    transition: padding 0.3s ease; /* Smooth transition for expanding header */
     align-items: center;
     width: 100%;
     height: 50px;
@@ -331,4 +333,82 @@ main {
     background-color: #004085;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     transform: translateY(2px);
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Hamburger menu links (hidden by default) */
+.hamburger-links {
+    display: none; /* Hide by default */
+    flex-direction: column; /* Stack vertically */
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #282828  ;
+    width: 100%;
+    padding: 10px;
+}
+
+/* When hamburger is clicked, header expands */
+.top-bar.expanded {
+    padding: 40px; /* Increased padding when expanded */
+}
+
+.hamburger-links.show {
+    display: flex; /* Show when class is added */
+}
+
+@media only screen and (max-width: 768px) {
+
+    .hamburger {
+        display: flex;
+        margin-right: 10px;
+        font-size: 30px;
+    }
+
+     /* Hide static links by default */
+    .top-bar-element.links {
+        display: none;
+    }
+
+    /* Show the hamburger menu links when the header is expanded */
+    .hamburger-links {
+        display: none; /* Hide by default */
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    /* Show hamburger links when "show" class is added */
+    .hamburger-links.show {
+        display: flex;
+    }
+
+    .top-bar-element {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .hamburger {
+        margin-top: 10px; /* Adjust hamburger position */
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-list {
+        display: flex;
+        flex-direction: column;
+        justify-items: center; /* Center items horizontally */
+    }
+
+    .text-contacts {
+        display: flex;
+        flex-direction: column;
+        justify-items: center; /* Center items horizontally */
+    }
 }
