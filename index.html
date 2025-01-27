@@ -5,27 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akshat Singh</title>
     <link rel="stylesheet" href="style.css">
+    <script src="/Components/top_bar/top_bar.js"></script>
+    <script src="/Components/bottom-bar/bottom_bar.js"></script>
 </head>
 <body>
     <header>
-        <div class="top-bar">
-            <div class="top-bar-element name">
-                <a href="index.html" style="color: inherit; text-decoration: none;">
-                    Akshat Singh
-                </a>
-            </div>
-            <div class="hamburger">☰</div> <!-- Hamburger icon -->
-            <div class="hamburger-links">
-                <a href="index.html" class="top-bar-element button">Home</a>
-                <a href="#Projects" class="top-bar-element button">Projects</a>
-                <a href="#Contact" class="top-bar-element button">Contact</a>
-            </div>
-            <div class="top-bar-element links">
-                <a href="index.html" class="top-bar-element button">Home</a>
-                <a href="#Projects" class="top-bar-element button">Projects</a>
-                <a href="#Contact" class="top-bar-element button">Contact</a>
-            </div>
-        </div>
+        <top-bar></top-bar>
     </header>
     
     <main>
@@ -187,36 +172,7 @@
         </div>
     </main>
 
-    <footer id="Contact">
-        <div class="item contacts">
-            <div class="contact-item contact-text">
-                Contact:
-            </div>
-            <div class="text-contacts">
-                <div class="contact-item">
-                    <div class="contact-text">+91-7860264227</div>
-                </div>
-                <div class="contact-item">
-                    <a class="contact-text" href="mailto:akshats20@iiserb.ac.in">akshats20@iiserb.ac.in</a>
-                </div>
-                <div class="contact-item">
-                    <a class="contact-text" href="mailto:akshat12y@gmail.com">akshat12y@gmail.com</a>
-                </div>
-            </div>
-            <div class="contact-item">
-                <a href="https://www.linkedin.com/in/akshat-singh-2b0466218/" target="_blank">
-                    <img src="images/linkedin-app-icon.svg" alt="LinkedIn" class="contact-icon">
-                </a>
-                <a href="https://github.com/Sh1r0Yaksha" target="_blank">
-                    <img src="images/github-icon.svg" alt="Github" class="contact-icon">
-                </a>
-                <a href="https://orcid.org/0009-0002-7938-7529" target="_blank">
-                    <img src="images/ORCID_iD.svg" alt="ORCID" class="contact-icon">
-                </a>
-            </div>
-        </div>
-    </footer>
-
+    <bottom-bar></bottom-bar>
     <script src="script.js"></script> 
 </body>
 </html>
