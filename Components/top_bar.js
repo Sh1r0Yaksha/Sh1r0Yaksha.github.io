@@ -131,6 +131,7 @@ class TopBar extends HTMLElement {
             <div class="hamburger-links">
                 <a href="/index.html" class="top-bar-element button">Home</a>
                 <a href="/index.html#Projects" class="top-bar-element button">Projects</a>
+                <a href="#Contact" class="top-bar-element button">Contact</a>
             </div>
             <div class="top-bar-element links">
                 <a href="/index.html" class="top-bar-element button">Home</a>
@@ -143,10 +144,19 @@ class TopBar extends HTMLElement {
         // Add HTML content and styles to the shadow DOM
         this.shadowRoot.innerHTML = htmlContent;
 
-        // Add functionality for the hamburger menu toggle
-        this.shadowRoot.querySelector('.hamburger').addEventListener('click', () => {
-            const links = this.shadowRoot.querySelector('.hamburger-links');
-            links.classList.toggle('show');
+        const hamburger = this.shadowRoot.querySelector('.hamburger');
+        const hamburgerLinks = this.shadowRoot.querySelector('.hamburger-links');
+        const links = this.shadowRoot.querySelectorAll('.hamburger-links .top-bar-element'); // Select all links inside the hamburger menu
+
+        hamburger.addEventListener('click', () => {
+            hamburgerLinks.classList.toggle('show'); // Toggle the 'show' class to display the links
+        });
+
+        // Close the menu when any link inside the hamburger menu is clicked
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburgerLinks.classList.remove('show'); // Hide the hamburger menu
+            });
         });
     }
 }

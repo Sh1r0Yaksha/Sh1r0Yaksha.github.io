@@ -2,8 +2,6 @@
 class BottomBar extends HTMLElement {
     constructor() {
         super();
-        // Attach shadow DOM
-        this.attachShadow({ mode: 'open' });
     }
 
     connectedCallback() {
@@ -95,7 +93,7 @@ class BottomBar extends HTMLElement {
 
         this.id = 'Contact'
         // Add HTML content and styles to the shadow DOM
-        this.shadowRoot.innerHTML = htmlContent;
+        this.innerHTML = htmlContent;
     }
 }
 
