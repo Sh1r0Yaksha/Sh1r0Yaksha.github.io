@@ -1,10 +1,9 @@
-
 .game-wrapper {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
 .game {
     width: 1026px;
@@ -15,6 +14,35 @@
     display: flex;
     flex-direction: column;
     position: relative;
+}
+
+.start-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/Games/Moo_Jump/Assets/Start_Screen/Moo.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.start-text {
+    position: absolute;
+    bottom: 200px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.5;
 }
 
 @keyframes scroll-background {

@@ -6,9 +6,10 @@ const gameState = {
     obstacleMinInterval: 0.005,
     obstacleMaxInterval: 0.05,
     obstacleSpeed: 500,
-    collisionOffset: 25,
+    collisionOffset: 33,
     score: 0,
     isGameOver: false,
+    isGameStarted: false,
     framerate: 60,
     obstacles: []
 };
@@ -19,6 +20,52 @@ const scoreDisplay = document.getElementById('score');
 const moo_img = document.getElementById('moo-img');
 const background = document.querySelector('.game');
 const ground = document.getElementById('ground');
+
+function showStartScreen() {
+    const startScreen = document.createElement('div');
+    startScreen.className = 'start-screen';
+    
+    const startText = document.createElement('div');
+    startText.className = 'start-text';
+    startText.innerHTML = `
+        Click or press Space to start
+    `;
+    
+    startScreen.appendChild(startText);
+    background.appendChild(startScreen);
+    
+    // Stop animations initially
+    background.style.animation = 'none';
+    ground.style.animation = 'none';
+    moo_img.style.animation = 'none';
+
+    const startHandler = (event) => {
+        if (event.type === 'click' || event.code === 'Space') {
+            event.preventDefault();
+            gameState.isGameStarted = true;
+            
+            // Fade out and remove start screen
+            startScreen.style.transition = 'opacity 0.5s';
+            startScreen.style.opacity = '0';
+            setTimeout(() => {
+                startScreen.remove();
+            }, 500);
+            
+            // Start animations
+            ground.style.animation = 'scroll-ground 2s linear infinite';
+            background.style.animation = 'scroll-background 20s linear infinite';
+            moo_img.style.animation = 'moo-walk 0.5s steps(10) infinite';
+            
+            window.removeEventListener('click', startHandler);
+            window.removeEventListener('keydown', startHandler);
+            
+            startObstacleGeneration();
+        }
+    };
+    
+    window.addEventListener('click', startHandler);
+    window.addEventListener('keydown', startHandler);
+}
 
 // Sound effects
 const jumpSound = new Audio('Assets/Sounds/jump.mp3');
@@ -41,7 +88,7 @@ function checkCollision(obstacle) {
 
 // Jump mechanics
 function jump() {
-    if (gameState.isJumping || gameState.isGameOver) return;
+    if (!gameState.isGameStarted || gameState.isJumping || gameState.isGameOver) return;
     
     gameState.isJumping = true;
     jumpSound.currentTime = 0;
@@ -74,6 +121,7 @@ window.addEventListener('keydown', (event) => {
 // Game over handling
 function gameOver() {
     gameState.isGameOver = true;
+    gameState.isGameStarted = false;
     collisionSound.play();
     
     const gameOverDisplay = document.createElement('div');
@@ -94,6 +142,7 @@ function gameOver() {
     const resetHandler = (event) => {
         if (event.type === 'click' || event.code === 'Space') {
             gameState.isGameOver = false;
+            gameState.isGameStarted = true;
             gameState.score = 0;
             scoreDisplay.textContent = 'Score: 0';
             gameOverDisplay.remove();
@@ -102,6 +151,7 @@ function gameOver() {
             window.removeEventListener('keydown', resetHandler);
             ground.style.animation = 'scroll-ground 2s linear infinite';
             background.style.animation = 'scroll-background 20s linear infinite';
+            moo_img.style.animation = 'moo-walk 0.5s steps(10) infinite';
             
             startObstacleGeneration();
         }
@@ -187,10 +237,11 @@ async function obstacleLoop() {
     }
 }
 
-// Start game
+// Modified start game function
 function startObstacleGeneration() {
     gameState.obstacles = [];
     obstacleLoop();
 }
 
-startObstacleGeneration();
+// Initialize game with start screen
+showStartScreen();
