@@ -132,11 +132,13 @@ class TopBar extends HTMLElement {
                 <a href="/index.html" class="top-bar-element button">Home</a>
                 <a href="/index.html#Projects" class="top-bar-element button">Projects</a>
                 <a href="#Contact" class="top-bar-element button">Contact</a>
+                <a href="/Games/Games.html" class="top-bar-element button">Games</a>
             </div>
             <div class="top-bar-element links">
                 <a href="/index.html" class="top-bar-element button">Home</a>
                 <a href="/index.html#Projects" class="top-bar-element button">Projects</a>
                 <a href="#Contact" class="top-bar-element button">Contact</a>
+                <a href="/Games/Games.html" class="top-bar-element button">Games</a>
             </div>
         </div>
         `;

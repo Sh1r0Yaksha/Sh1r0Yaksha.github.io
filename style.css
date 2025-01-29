@@ -102,7 +102,6 @@ main {
     margin-inline: auto;
     background: #1f2631;
     margin-top: 5%;
-    padding-bottom: 5%;
 }
 
 .name {
@@ -151,10 +150,10 @@ main {
     display: inline-block; /* Make the anchor behave like a block element */
     text-align: center; /* Center-align the text */
     text-decoration: none; /* Remove the underline from the link */
+    padding-bottom: 10%;
 }
 
 .contact-icon {
-    width: 100px; /* Set a width for the image (adjust as needed) */
     height: auto; /* Keep the aspect ratio */
 }
 
