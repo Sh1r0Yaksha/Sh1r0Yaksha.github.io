@@ -1,39 +1,41 @@
 // Game state
 const gameState = {
     isJumping: false,
-    jumpHeight: 200, // pixels
-    jumpDuration: 700, // ms
-    obstacleMinInterval: 1000,  // ms
-    obstacleMaxInterval: 2000,  // ms
-    collisionoffset: 25, // px
-    obstacles: [],  // queue for obstacles
+    jumpHeight: 200,
+    jumpDuration: 700,
+    obstacleMinInterval: 0.005,
+    obstacleMaxInterval: 0.05,
+    obstacleSpeed: 500,
+    collisionOffset: 25,
     score: 0,
-    isGameOver: false
+    isGameOver: false,
+    framerate: 60,
+    obstacles: []
 };
 
+// DOM Elements
 const moo = document.getElementById('moo');
 const scoreDisplay = document.getElementById('score');
 const moo_img = document.getElementById('moo-img');
-
-// Moving Objects
 const background = document.querySelector('.game');
-const ground = document.querySelector('.ground');
+const ground = document.getElementById('ground');
 
 // Sound effects
-const jumpSound = new Audio('/Games/Moo_Jump/Assets/Sounds/jump.mp3');
-const collisionSound = new Audio('/Games/Moo_Jump/Assets/Sounds/game_over.mp3');
-const scoreSound = new Audio('/Games/Moo_Jump/Assets/Sounds/score.mp3');
+const jumpSound = new Audio('Assets/Sounds/jump.mp3');
+const collisionSound = new Audio('Assets/Sounds/game_over.mp3');
+const scoreSound = new Audio('Assets/Sounds/score.mp3');
 
 // Collision detection
-function checkCollision(obstacle, offset) {
+function checkCollision(obstacle) {
     const mooRect = moo.getBoundingClientRect();
     const obstacleRect = obstacle.getBoundingClientRect();
+    const offset = gameState.collisionOffset / 100;
 
     return !(
-        mooRect.right - (mooRect.width * (offset / 100)) < obstacleRect.left || 
-        mooRect.left + (mooRect.width * (offset / 100)) > obstacleRect.right || 
-        mooRect.bottom + (mooRect.height * (offset / 100)) < obstacleRect.top || 
-        mooRect.top - (mooRect.height * (offset / 100)) > obstacleRect.bottom
+        mooRect.right - (mooRect.width * offset) < obstacleRect.left || 
+        mooRect.left + (mooRect.width * offset) > obstacleRect.right || 
+        mooRect.bottom - (mooRect.height * offset) < obstacleRect.top || 
+        mooRect.top + (mooRect.height * offset) > obstacleRect.bottom
     );
 }
 
@@ -72,7 +74,7 @@ window.addEventListener('keydown', (event) => {
 // Game over handling
 function gameOver() {
     gameState.isGameOver = true;
-    // collisionSound.play();
+    collisionSound.play();
     
     const gameOverDisplay = document.createElement('div');
     gameOverDisplay.className = 'game-over';
@@ -84,19 +86,23 @@ function gameOver() {
     background.appendChild(gameOverDisplay);
     background.style.animation = 'none';
     ground.style.animation = 'none';
-    document.querySelectorAll('.obstacle').forEach(obs => obs.remove());
-    // Reset game on click or space
+
+    // Clear all obstacles
+    gameState.obstacles.forEach(obs => obs.remove());
+    gameState.obstacles = [];
+
     const resetHandler = (event) => {
         if (event.type === 'click' || event.code === 'Space') {
             gameState.isGameOver = false;
             gameState.score = 0;
-            scoreDisplay.innerHTML = 'Score: 0';
+            scoreDisplay.textContent = 'Score: 0';
             gameOverDisplay.remove();
             
             window.removeEventListener('click', resetHandler);
             window.removeEventListener('keydown', resetHandler);
+            ground.style.animation = 'scroll-ground 2s linear infinite';
             background.style.animation = 'scroll-background 20s linear infinite';
-            ground.style.animation = 'scroll-ground 0.01s linear infinite;';
+            
             startObstacleGeneration();
         }
     };
@@ -105,15 +111,15 @@ function gameOver() {
     window.addEventListener('keydown', resetHandler);
 }
 
-// Obstacle generation
+// Obstacle management
 function createObstacle() {
-    if (gameState.isGameOver) return;
+    if (gameState.isGameOver) return null;
     
     const obstacle = document.createElement('img');
     obstacle.className = 'obstacle';
     
     const height = Math.floor(Math.random() * 100) + 40;
-    const width = Math.floor(Math.random() * 30) + 30;
+    const width = Math.floor(Math.random() * 30) + 50;
     
     obstacle.style.cssText = `
         position: absolute;
@@ -121,53 +127,70 @@ function createObstacle() {
         left: 1024px;
         width: ${width}px;
         height: ${height}px;
-        content:url(/Games/Moo_Jump/Assets/Obstacles/pipe.png);
-        transform: translateX(0);
-        transition: transform 2s linear;
+        content:url(Assets/Obstacles/pipe.png);
     `;
     
     document.querySelector('.main-area').appendChild(obstacle);
-    
-    let hasScored = false;
-    
-    // Collision and score checking
-    const checkInterval = setInterval(() => {
-        if (checkCollision(obstacle, gameState.collisionoffset)) {
-            clearInterval(checkInterval);
-            gameOver();
-        } else if (!hasScored && obstacle.getBoundingClientRect().right < moo.getBoundingClientRect().left) {
-            hasScored = true;
-            gameState.score++;
-            scoreDisplay.innerHTML = `Score: ${gameState.score}`;
-            // scoreSound.currentTime = 0;
-            // scoreSound.play();
-        }
-    }, 10);
-    
-    requestAnimationFrame(() => {
-        obstacle.style.transform = 'translateX(-1064px)';
-    });
-    
-    setTimeout(() => {
-        obstacle.remove();
-        clearInterval(checkInterval);
-    }, gameState.obstacleMaxInterval);
+    gameState.obstacles.push(obstacle);
+    return obstacle;
 }
 
-
-// Start generating obstacles
-function startObstacleGeneration() {
-    function generateObstacle() {
-        if (!gameState.isGameOver) {
-            createObstacle();
-            const nextInterval = Math.random() * 
-                (gameState.obstacleMaxInterval - gameState.obstacleMinInterval) + 
-                gameState.obstacleMinInterval;
-            setTimeout(generateObstacle, nextInterval);
-        }
+function moveObstacle(obstacle) {
+    if (!obstacle) return false;
+    const currentLeft = parseInt(obstacle.style.left) || 1024;
+    const newLeft = currentLeft - gameState.obstacleSpeed * (1 / gameState.framerate);
+    
+    if (newLeft + obstacle.offsetWidth < 0) {
+        return false; // Obstacle is off screen
     }
-    generateObstacle();
+    
+    obstacle.style.left = `${newLeft}px`;
+    return true; // Obstacle still on screen
 }
 
-// Start the game
+function updateScore() {
+    gameState.score++;
+    scoreDisplay.textContent = `Score: ${gameState.score}`;
+    scoreSound.play();
+}
+
+// Main game loop
+async function obstacleLoop() {
+    while (!gameState.isGameOver) {
+        const obstacle = createObstacle();
+        if (!obstacle) break;
+
+        let isOnScreen = true;
+        while (isOnScreen && !gameState.isGameOver) {
+            isOnScreen = moveObstacle(obstacle);
+            
+            if (checkCollision(obstacle)) {
+                gameOver();
+                break;
+            }
+            
+            if (!isOnScreen) {
+                updateScore();
+                const index = gameState.obstacles.indexOf(obstacle);
+                if (index > -1) {
+                    gameState.obstacles.splice(index, 1);
+                }
+                obstacle.remove();
+            }
+            
+            await new Promise(resolve => setTimeout(resolve, 1000 / gameState.framerate));
+        }
+
+        // Wait for next obstacle
+        const nextInterval = Math.random() * (gameState.obstacleMaxInterval - gameState.obstacleMinInterval) + gameState.obstacleMinInterval;
+        await new Promise(resolve => setTimeout(resolve, nextInterval * 1000));
+    }
+}
+
+// Start game
+function startObstacleGeneration() {
+    gameState.obstacles = [];
+    obstacleLoop();
+}
+
 startObstacleGeneration();
