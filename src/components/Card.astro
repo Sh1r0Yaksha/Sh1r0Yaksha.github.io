@@ -1,0 +1,78 @@
+--- 
+const 
+{
+    href,
+    img_src,
+    img_alt,
+    display_text,
+} = Astro.props
+---
+
+<a class="card" href={href} target="_blank">
+    <img src={img_src} alt={img_alt}/>
+    <div class="content">
+        <p>{display_text}</p>
+    </div>
+    <div class="card-hover-text">
+        <slot />
+    </div>
+</a>
+
+<style>
+    .card {
+        width: 33%;
+        margin: 3em;
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.3s;
+        cursor: pointer;
+        position: relative;
+        color: rgb(210, 211, 224);
+        text-decoration: none;
+    }
+
+    .card:hover {
+        transform: scale(1.1);
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s; /* Smooth transition for blur effect */
+    }
+
+    .card .content {
+        padding: 5px;
+        transition: filter 0.3s; /* Smooth transition for blur effect */
+        position: relative;
+    }
+
+    .card .card-hover-text {
+        display: flex; /* Make the hover text a flex container */
+        align-items: center; /* Center align items vertically */
+        justify-content: center; /* Center align items horizontally */
+        font-size: 14px;
+        color: #ffffff;
+        position: absolute;
+        left: 0; /* Align to the left edge */
+        top: 0; /* Align to the top edge */
+        width: 100%; /* Match the width of the card */
+        height: 100%; /* Match the height of the card */
+        background: rgba(40, 40, 40, 0.8); /* Semi-transparent background */
+        backdrop-filter: blur(5px); /* Apply background blur */
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transition: opacity 0.4s ease; /* Fade-in transition */
+        z-index: 2; /* Ensure hover text appears above blurred content */
+    }
+
+    .card:hover .content, .card:hover img {
+        filter: blur(5px);
+    }
+
+    .card:hover .card-hover-text {
+        bottom: 50%;
+        opacity: 1;
+    }
+</style>

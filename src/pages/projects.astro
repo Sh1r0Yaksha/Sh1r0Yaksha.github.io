@@ -1,0 +1,134 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Section from '../components/Section.astro';
+import Card from '../components/Card.astro';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title='Projects'>
+	<h1>Projects and Ongoing Work</h1>
+	<Section id="Projects">
+		<div class="projects-row">
+			<Card 
+				href="/documents/BS_Project.pdf" 
+				img_src="/images/VR.jpg" 
+				img_alt="Virtual Reality"
+				display_text="User-Interface for Virtual Reality-Based Human Swarm Interaction">
+				Final Year Project(ECS412). This project involves developing interfaces to facilitate collaboration between robotics swarms and humans in the Virtual Reality domain
+			</Card>
+
+			<Card 
+				href=https://github.com/Sh1r0Yaksha/SmolTAS
+				img_src="/images/Ame.png" 
+				img_alt="SmolTAS"
+				display_text="SmolTAS">
+				A mod for the game Smol Ame that helps with tool-assisted speedruns. It allows users to write inputs on a .txt file, control game speed, pause/resume at any point, and save/load player position and timing
+			</Card>
+			<Card 
+				href=https://github.com/Sh1r0Yaksha/Flappy_Moo
+				img_src="/images/Moo.png" 
+				img_alt="Moo"
+				display_text="Flappy Moo">
+				A Flappy Bird clone with various changes. Created from scratch using WinForms in C#
+			</Card>
+		</div>
+
+		<div class="projects-row">
+			<Card 
+				href="https://github.com/Sh1r0Yaksha/Prediction-of-Pokemon-Fights"
+				img_src="/images/pokemon.png"
+				img_alt="Pokemon"
+				display_text="Pokemon Fight Predictor">
+				A machine learning model for predicting the winner of Pokemon Fights, completed as part of the semester project for the course Data Science and Machine Learning (ECS308)
+			</Card>
+
+			<Card 
+				href="https://github.com/Sh1r0Yaksha/MathsLib"
+				img_src="/images/Math.jpg"
+				img_alt="Maths"
+				display_text="MathsLib">
+				A hobby project to create a C# library that contains various Mathematical Functions.
+			</Card>
+
+			<Card 
+				href="https://github.com/Sh1r0Yaksha/Indian_Stock_Market_Network"
+				img_src="/images/Network.png"
+				img_alt="Network"
+				display_text="Indian Stock Market Network">
+				Semester Project for the course Network Science: Theory and Applications(ECS414). This project involved collecting and processing the stock market data of top 200 Indian stocks, finding their correlation, creating a network based on the correlations and finding various features of the network like edge density, centrality etc.
+			</Card>
+		</div>
+
+		<div class="projects-row">
+			<Card 
+				href="https://github.com/Sh1r0Yaksha/RSA"
+				img_src="/images/RSA.png"
+				img_alt="RSA"
+				display_text="RSA Encryption and Decryption">
+				A hobby project created while doing the Modern Cryptography course (ECS610), which implements the vanilla RSA encryption and decryption scheme.
+			</Card>
+
+			<Card 
+				href="https://github.com/Borun2002/Breast-Cancer-Classification"
+				img_src="/images/Breast_Cancer.png"
+				img_alt="Breast Cancer Awareness"
+				display_text="Breast Cancer Classification">
+				Semester Project for the course Data Science in Practice (DSE315). This project involved using the Breast Cancer Wisconsin data and classifying cases as benign or malignant.
+			</Card>
+
+			<Card 
+				href="https://github.com/Sh1r0Yaksha/SAMI"
+				img_src="/images/AmeGroundPound.png"
+				img_alt="SAMI"
+				display_text="Smol Ame Mod Installer(SAMI)">
+				A mod installer for Smol Ame game that fetches all available mods on Github and lets users install selected mods locally. Made using WinForms.
+			</Card>
+		</div>
+
+		<div class="projects-row">
+			<Card 
+				href="https://github.com/Sh1r0Yaksha/BioInformatics"
+				img_src="/images/Bioinfo.png"
+				img_alt="Bioinformatics"
+				display_text="Bioinformatics Algorithms">
+				A hobby project created while auditing the Bioinformatics course (BIO402), which implements the plot of dot matrix alignment of two sequences and the global sequence alignment of two sequences using the Needleman–Wunsch algorithm
+			</Card>
+
+			<Card 
+				href="https://github.com/Sh1r0Yaksha/Biostatistics_Semester_Project"
+				img_src="/images/BioStatistics.png"
+				img_alt="BioStatistics"
+				display_text="BioStatistics">
+				Semester Project for the course Biostatistics(BIO407). This project involved using data from various cell lines involving HIV-1 nef, a protein important for the development of AIDS, and performing statistical studies on it.
+			</Card>
+
+			<Card 
+				href="https://github.com/Sh1r0Yaksha/ConvexHullAlgorithms"
+				img_src="/images/Convex Hull.png"
+				img_alt="Convex Hull"
+				display_text="Convex Hull Algorithms">
+				Implementation of the Graham's Scan and Jarvis March algorithms learnt while working with Dr. Sujoy Bhore
+			</Card>
+		</div>
+		
+	</Section>
+</Layout>
+
+<style>
+	.projects-row {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	@media (max-width: 768px) {
+		.projects-row {
+			flex-direction: column;
+		}
+	}
+
+	
+</style>

@@ -1,0 +1,172 @@
+---
+import Navigation from '../components/Navigation.astro';
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} | Akshat Singh</title>
+    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+  </head>
+  <body>
+    <Navigation />
+    
+    <main class="main-content">
+      <slot />
+    </main>
+    
+    <footer class="footer">
+      <div id="Contact" class="item contacts">
+        <div class="contact-item contact-text">
+            Contact:
+        </div>
+        <div class="text-contacts">
+            <div class="contact-item">
+                <div class="contact-text">+91-7860264227</div>
+            </div>
+            <div class="contact-item">
+                <a class="contact-text" href="mailto:akshats20@iiserb.ac.in">akshats20@iiserb.ac.in</a>
+            </div>
+            <div class="contact-item">
+                <a class="contact-text" href="mailto:akshat12y@gmail.com">akshat12y@gmail.com</a>
+            </div>
+        </div>
+        <div class="contact-item">
+            <a href="https://www.linkedin.com/in/akshat-singh-2b0466218/" target="_blank">
+                <img src="/images/linkedin-app-icon.svg" alt="LinkedIn" class="contact-icon">
+            </a>
+            <a href="https://github.com/Sh1r0Yaksha" target="_blank">
+                <img src="/images/github-icon.svg" alt="Github" class="contact-icon">
+            </a>
+            <a href="https://orcid.org/0009-0002-7938-7529" target="_blank">
+                <img src="/images/ORCID_iD.svg" alt="ORCID" class="contact-icon">
+            </a>
+        </div>
+    </div>
+      <div class="footer-content">
+        <p>&copy; 2025 Akshat Singh. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background: #0a0a0a;
+    background-image: 
+      radial-gradient(circle at 20% 80%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(118, 75, 162, 0.1) 0%, transparent 50%);
+  }
+  
+  .main-content {
+    min-height: calc(100vh - 140px);
+    padding: 2rem;
+	width: 100%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+	justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .footer {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #e0e0e0;
+    padding: 1rem;
+    padding-top: 0.1em;
+    margin-top: auto;
+    border-top: 1px solid #333;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .footer-links a {
+    color: #b0b0b0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #667eea;
+  }
+  
+  @media (max-width: 768px) {
+    .main-content {
+      padding: 1rem;
+    }
+    
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .contacts {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .text-contacts {
+      display: flex;
+      align-items: center;
+  }
+
+  .contact-item {
+      display: flex;
+      align-items: center;
+      /* border:2px solid red; */
+  }
+
+  .contact-text {
+      /* border:1px solid white; */
+      font-family: 'Merriweather', serif;
+      color: #b0c4e5;
+      text-decoration: none;
+      margin: 10px 10px 10px 10px;
+  }
+
+  .bold {
+      font-weight: bold;
+  }
+
+  .contact-icon {
+      width: 25px;
+      margin-top: 10px;
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-bottom: 0px;
+  }
+</style>
