@@ -6,7 +6,7 @@ import logo from '/logo.png';
 const navItems = [
   { href: '/', label: 'Home' },
   { href: '/projects', label: 'Projects' },
-  { href: '/gallery', label: 'Gallery' },
+  { href: '/wanderings', label: 'Wanderings' },
 ];
 
 const Navbar: React.FC = () => {

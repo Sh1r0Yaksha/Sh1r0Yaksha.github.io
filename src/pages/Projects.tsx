@@ -2,6 +2,7 @@ import Section from "../components/Section";
 import Card from '../components/Card';
 import './Projects.css';
 
+import BS_Project from '../assets/documents/BS_Project.pdf'
 import Ame from '../assets/images/Ame.png';
 import VR from '../assets/images/VR.jpg';
 import Moo from '../assets/images/Moo.png';
@@ -12,7 +13,6 @@ import Bioinfo from '../assets/images/Bioinfo.png';
 import BioStatistics from '../assets/images/BioStatistics.png';
 import Convex_Hull from '../assets/images/Convex Hull.png';
 
-
 export default function Projects() {
   return (
     <div className="body">
@@ -20,7 +20,7 @@ export default function Projects() {
       <Section id="Projects">
         <div className="projects-row">
           <Card 
-            href="/documents/BS_Project.pdf" 
+            href={BS_Project}
             img_src={VR}
             img_alt="Virtual Reality"
             display_text="User-Interface for Virtual Reality-Based Human Swarm Interaction">

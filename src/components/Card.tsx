@@ -10,7 +10,7 @@ interface CardProps {
     children?: ReactNode;
 }
 
-const Card: React.FC<CardProps> = ({ href, img_src, img_alt, display_text }) => {
+const Card: React.FC<CardProps> = ({ href, img_src, img_alt, display_text, children }) => {
     return (
         <a className="card" href={href} target="_blank">
             <img src={img_src} alt={img_alt} loading="lazy"/>
@@ -18,7 +18,7 @@ const Card: React.FC<CardProps> = ({ href, img_src, img_alt, display_text }) => 
                 <p>{display_text}</p>
             </div>
             <div className="card-hover-text">
-                <slot />
+                {children}
             </div>
         </a>
     );

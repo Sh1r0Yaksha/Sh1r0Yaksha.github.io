@@ -1,0 +1,188 @@
+[
+        {
+            "id": "IISERB",
+            "geocode": [23.2858, 77.2755],
+            "popup": "IISER Bhopal",
+            "href": "https://www.google.com"
+        },
+        {
+            "id": "Indore",
+            "geocode": [22.7196, 75.8577],
+            "popup": "Indore",
+            "href": "https://www.google.com"
+        },
+        {
+            "id": "Ghazipur",
+            "geocode": [25.5878, 83.5783],
+            "popup": "Ghazipur",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Betabar",
+            "geocode": [25.4924, 83.5849],
+            "popup": "Betabar",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Buxar",
+            "geocode": [25.5647, 83.9777],
+            "popup": "Buxar",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Ekdaar",
+            "geocode": [25.4234, 83.9228],
+            "popup": "Ekdaar",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Varanasi",
+            "geocode": [25.3176, 82.9739],
+            "popup": "Varanasi",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Lucknow",
+            "geocode": [26.8467, 80.9462],
+            "popup": "Lucknow",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Kanpur",
+            "geocode": [26.4499, 80.3319],
+            "popup": "Varanasi",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Prayagraj",
+            "geocode": [25.4683, 81.8546],
+            "popup": "Prayagraj",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "New_Delhi",
+            "geocode": [28.6139, 77.2088],
+            "popup": "New Delhi",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Noida",
+            "geocode": [28.5355, 77.3910],
+            "popup": "Noida",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Mathura",
+            "geocode": [27.4924, 77.6737],
+            "popup": "Mathura",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Agra",
+            "geocode": [27.1767, 78.0081],
+            "popup": "Agra",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Jalandhar",
+            "geocode": [31.3260, 75.5762],
+            "popup": "Jalandhar",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Amritsar",
+            "geocode": [31.6340, 74.8723],
+            "popup": "Amritsar",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Wagah_Border",
+            "geocode": [31.6048, 74.5741],
+            "popup": "Attari - Wagah Border",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Jwala_Mata",
+            "geocode": [31.8754, 76.3241],
+            "popup": "Shri Jwalamukhi Mata Shaktipeeth ji Temple",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Kota",
+            "geocode": [25.2138, 75.8648],
+            "popup": "Kota",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Bhopal",
+            "geocode": [23.2599, 77.4126],
+            "popup": "Bhopal",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Vidisha",
+            "geocode": [23.5236, 77.8140],
+            "popup": "Vidisha",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Surat",
+            "geocode": [21.1702, 72.8311],
+            "popup": "Surat",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Valsad",
+            "geocode": [20.5992, 72.9342],
+            "popup": "Valsad",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Vapi",
+            "geocode": [20.3893, 72.9106],
+            "popup": "Vapi",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Pune",
+            "geocode": [18.5246, 73.8786],
+            "popup": "Pune",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Nashik",
+            "geocode": [19.9993, 73.7900],
+            "popup": "Nashik",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Shirdi",
+            "geocode": [19.7645, 74.4762],
+            "popup": "Shirdi",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Bengaluru",
+            "geocode": [12.9629, 77.5775],
+            "popup": "Bengaluru",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Mysuru",
+            "geocode": [12.2958, 76.6394],
+            "popup": "Mysuru",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Patna",
+            "geocode": [25.5941, 85.1376],
+            "popup": "Patna",
+            "href": "https://www.facebook.com"
+        },
+        {
+            "id": "Rajgir",
+            "geocode": [25.0262, 85.4174],
+            "popup": "Rajgir",
+            "href": "https://www.facebook.com"
+        }
+    ]

@@ -7,7 +7,7 @@ import linkedIn_icon from "../assets/images/linkedin-app-icon.svg";
 
 export default function Layout() {
   return (
-    <>
+    <div className="overall">
       <Navbar />
 
       <main className="main-content">
@@ -77,6 +77,6 @@ export default function Layout() {
           <p>&copy; 2025 Akshat Singh. All rights reserved.</p>
         </div>
       </footer>
-    </>
+    </div>
   );
 }

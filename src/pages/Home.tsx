@@ -1,15 +1,12 @@
-import { useEffect } from "react";
 import Section from "../components/Section";
 import './Home.css'
 
+import CV from '../assets/documents/My_CV.pdf'
 import My from '../assets/images/My.webp'
-import CV from '../assets/images/CV.png'
+import CV_img from '../assets/images/CV.png'
 import Orcid from '../assets/images/ORCID_iD.svg'
 
 export default function Home() {
-    useEffect(() => {
-    document.title = `${Home} | Akshat Singh`;
-    }, [Home]);
     return (
         <>
             <Section id="about">
@@ -45,8 +42,8 @@ export default function Home() {
                         </p>
                     </div>
                     <div className="CV">
-                        <a href="/Documents/My_CV.pdf" className="CV-button" target="_blank">
-                            <img src={CV} alt="CURRICULUM VITAE" className="contact-icon-home" />
+                        <a href={CV} className="CV-button" target="_blank">
+                            <img src={CV_img} alt="CURRICULUM VITAE" className="contact-icon-home" />
                             <span className="cv-text">CURRICULUM VITAE</span>
                         </a>
                         <a href="https://orcid.org/0009-0002-7938-7529" className="CV-button" target="_blank">
