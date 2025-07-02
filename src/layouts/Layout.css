@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
   }
 
   /* set html, body, and root to 100% height/width */
@@ -75,6 +76,10 @@
     .footer-content {
       flex-direction: column;
       text-align: center;
+    }
+
+    .text-contacts {
+      flex-direction: column;
     }
   }
 
