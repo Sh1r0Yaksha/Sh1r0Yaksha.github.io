@@ -30,6 +30,7 @@ export default function Wanderings()
                 </p><br/>
                 <p>
                     You might find a few photos here and there — but fair warning, I'm not much of a photographer (in fact, I don't really enjoy taking pictures), so the visuals are a bit limited.
+                    That's mostly because I believe the beauty of nature is best enjoyed with your own eyes.
                 </p><br/>
                 <p>
                     The work's still in progress, so it might take a while to fill in the full list with all the blogs — that is, if I can manage to keep my blogging time even half as consistent as my traveling, coding, and gaming time.
