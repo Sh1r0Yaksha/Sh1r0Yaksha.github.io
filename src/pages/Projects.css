@@ -1,0 +1,22 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: fit-content;
+}
+
+.projects-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .projects-row {
+        flex-direction: column;
+    }
+}

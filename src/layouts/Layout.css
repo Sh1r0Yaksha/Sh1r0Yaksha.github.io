@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background: #0a0a0a;
+    background-image: 
+      radial-gradient(circle at 20% 80%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(118, 75, 162, 0.1) 0%, transparent 50%);
+  }
+  
+  .main-content {
+    min-height: calc(100vh - 140px);
+    padding: 2rem;
+	  width: 100%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+	  justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #e0e0e0;
+    padding-top: 0.1em;
+    margin-top: auto;
+    border-top: 1px solid #333;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0.1em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: fit-content;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .footer-links a {
+    color: #b0b0b0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #667eea;
+  }
+  
+  @media (max-width: 768px) {
+    .main-content {
+      padding: 1rem;
+    }
+    
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .contacts {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .text-contacts {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+  }
+
+  .contact-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      /* border:2px solid red; */
+  }
+
+  .contact-text {
+      /* border:1px solid white; */
+      font-family: 'Merriweather', serif;
+      color: #b0c4e5;
+      text-decoration: none;
+      margin: 2px 2px 2px 2px;
+      width: fit-content;
+  }
+
+  .bold {
+      font-weight: bold;
+  }
+
+  .contact-icon {
+      width: 30px;
+      margin-top: 10px;
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-bottom: 0px;
+  }
+
+  #github-icon {
+    width: 50px;
+    margin: 0;
+  }

@@ -1,0 +1,83 @@
+.home {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20%;
+    width: 80%;
+    margin-inline: auto;
+    background: #1f2631;
+    margin-top: 5%;
+}
+
+.name {
+    text-align: center;
+}
+
+.line {
+    text-align: center;
+    color: white;
+    margin-bottom: 5%;
+}
+
+.about {
+    color: rgb(210, 211, 224);
+    text-align: center;
+    font-size: 120%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.my-image {
+    margin-top: 20px;
+    width: 30%; /* Adjust the width and height as needed */
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.my-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.my-image:hover img {
+    transform: scale(1.2); /* Scale up the image */
+}
+
+.CV {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto 30%;
+    margin-top: 5%;
+}
+
+.CV-button {
+    display: inline-block; /* Make the anchor behave like a block element */
+    text-align: center; /* Center-align the text */
+    text-decoration: none; /* Remove the underline from the link */
+    padding-bottom: 10%;
+}
+
+.contact-icon-home {
+    width: auto;
+    height: 60px; /* Keep the aspect ratio */
+}
+
+.cv-text {
+    display: block; /* Make it a block element */
+    margin-top: 5px; /* Space between the image and the text */
+    font-size: 14px; /* Set the font size */
+    color: rgb(210, 211, 224);
+}
