@@ -13,7 +13,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="projects" element={<Projects />} />
           <Route path="wanderings" element={<Wanderings />} />
-          <Route path="*" element={<NotFound />} /> {/* <-- catch-all route */}
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
