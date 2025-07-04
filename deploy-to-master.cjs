@@ -1,61 +1,80 @@
-const { execSync } = require('child_process');
-const fs = require('fs');
-const path = require('path');
+const { execSync } = require("child_process");
+const fs = require("fs");
+const path = require("path");
 
-const DEPLOY_DIR = 'dist';
-const TEMP_DIR = '.deploy-tmp';
-const TARGET_BRANCH = 'master';
+// CONFIG
+const TEMP_DIR = ".deploy-temp";
+const BUILD_DIR = "dist";
+const DEPLOY_BRANCH = "master";
+const SOURCE_BRANCH = "source";
+const COMMIT_MSG = "Deploying latest build";
 
-function run(command) {
-  console.log(`$ ${command}`);
-  execSync(command, { stdio: 'inherit' });
+function run(cmd) {
+  return execSync(cmd, { stdio: "inherit" });
 }
 
-function cleanDirExceptGit(dir) {
-  if (!fs.existsSync(dir)) return;
-  fs.readdirSync(dir).forEach(file => {
-    if (file === '.git') return;
-    fs.rmSync(path.join(dir, file), { recursive: true, force: true });
-  });
+function copyDir(src, dest) {
+  if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
+  const entries = fs.readdirSync(src, { withFileTypes: true });
+
+  for (let entry of entries) {
+    const srcPath = path.join(src, entry.name);
+    const destPath = path.join(dest, entry.name);
+
+    if (entry.isDirectory()) {
+      copyDir(srcPath, destPath);
+    } else {
+      fs.copyFileSync(srcPath, destPath);
+    }
+  }
 }
 
-function deploy() {
-  // Run build
-  run('npm run build');
+function deleteDir(dir) {
+  if (fs.existsSync(dir)) fs.rmSync(dir, { recursive: true, force: true });
+}
 
-  if (!fs.existsSync(DEPLOY_DIR)) {
-    console.error('❌ Build failed: dist/ folder not found.');
+function ensureCleanWorkingTree() {
+  const status = execSync("git status --porcelain").toString().trim();
+  if (status) {
+    console.error("❌ Your working tree is not clean. Please commit or stash your changes before deploying.");
     process.exit(1);
   }
-
-  const currentBranch = execSync('git branch --show-current').toString().trim();
-  console.log(`📦 Current branch: ${currentBranch}`);
-
-  run('git worktree prune');
-  if (fs.existsSync(TEMP_DIR)) {
-    fs.rmSync(TEMP_DIR, { recursive: true, force: true });
-  }
-
-  // Checkout master to temp worktree
-  run(`git worktree add ${TEMP_DIR} ${TARGET_BRANCH}`);
-
-  // Clean temp worktree (remove dist/node_modules/etc)
-  cleanDirExceptGit(TEMP_DIR);
-
-  // Copy dist/ into temp worktree
-  fs.cpSync(path.resolve(DEPLOY_DIR), path.resolve(TEMP_DIR), { recursive: true });
-
-  // Commit + push to master
-  run(`cd ${TEMP_DIR} && git add .`);
-  try {
-    run(`cd ${TEMP_DIR} && git commit -m "Deploy to master"`);
-  } catch {
-    console.log('✅ No changes to commit.');
-  }
-  run(`cd ${TEMP_DIR} && git push origin ${TARGET_BRANCH}`);
-
-  // Cleanup
-  run(`git worktree remove ${TEMP_DIR} --force`);
 }
 
-deploy();
+function main() {
+  ensureCleanWorkingTree();
+  console.log("🏗️ Building the app...");
+  run("npm run build");
+
+  console.log("📦 Copying dist/ to temp folder...");
+  deleteDir(TEMP_DIR);
+  copyDir(BUILD_DIR, TEMP_DIR);
+
+  console.log(`🔁 Switching to ${DEPLOY_BRANCH} branch...`);
+  run(`git checkout ${DEPLOY_BRANCH}`);
+
+  console.log("🧹 Cleaning old files...");
+  fs.readdirSync(".").forEach((file) => {
+    if (file !== ".git" && file !== ".gitignore") {
+      deleteDir(file);
+    }
+  });
+
+  console.log("📥 Copying new files from temp folder...");
+  copyDir(TEMP_DIR, ".");
+
+  console.log("📝 Committing changes...");
+  run("git add .");
+  run(`git commit -m "${COMMIT_MSG}"`);
+  run("git push");
+
+  console.log(`🔙 Switching back to ${SOURCE_BRANCH}...`);
+  run(`git checkout ${SOURCE_BRANCH}`);
+
+  console.log("🧽 Cleaning up temp folder...");
+  deleteDir(TEMP_DIR);
+
+  console.log("✅ Deployment complete!");
+}
+
+main();
