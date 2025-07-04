@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "npm run build && node deploy-to-master.cjs"
+    "deploy": "node deploy-to-master.cjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4",
