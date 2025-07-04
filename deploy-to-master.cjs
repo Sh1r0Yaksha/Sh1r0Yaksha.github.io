@@ -3,8 +3,8 @@ const fs = require("fs");
 const path = require("path");
 const os = require("os");
 
-// CONFIG
-const TEMP_DIR = path.join(os.tmpdir(), "vite-deploy-temp"); // outside the git repo
+// CONFIGURATION
+const TEMP_DIR = path.join(os.tmpdir(), "vite-deploy-temp");
 const BUILD_DIR = "dist";
 const DEPLOY_BRANCH = "master";
 const SOURCE_BRANCH = "source";
@@ -26,7 +26,7 @@ function copyDir(src, dest) {
   if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
   const entries = fs.readdirSync(src, { withFileTypes: true });
 
-  for (let entry of entries) {
+  for (const entry of entries) {
     const srcPath = path.join(src, entry.name);
     const destPath = path.join(dest, entry.name);
 
@@ -44,39 +44,54 @@ function deleteDir(dir) {
   }
 }
 
+function cleanMasterBranch() {
+  console.log("🧹 Cleaning old files from master branch (except .git and .gitignore)...");
+  fs.readdirSync(".", { withFileTypes: true }).forEach((entry) => {
+    const name = entry.name;
+    if (name === ".git" || name === ".gitignore") return;
+
+    const filePath = path.join(".", name);
+    try {
+      if (entry.isDirectory()) {
+        fs.rmSync(filePath, { recursive: true, force: true });
+      } else {
+        fs.unlinkSync(filePath);
+      }
+    } catch (err) {
+      console.warn(`⚠️ Failed to delete ${filePath}:`, err.message);
+    }
+  });
+}
+
 function main() {
   ensureCleanWorkingTree();
 
   console.log("🏗️ Building the app...");
   run("npm run build");
 
-  console.log("📦 Copying dist/ to temp folder (outside repo)...");
+  console.log("📦 Copying dist/ to external temp folder...");
   deleteDir(TEMP_DIR);
   copyDir(BUILD_DIR, TEMP_DIR);
 
   console.log(`🔁 Switching to '${DEPLOY_BRANCH}' branch...`);
   run(`git checkout ${DEPLOY_BRANCH}`);
 
-  console.log("🧹 Cleaning old files from master branch...");
-  fs.readdirSync(".").forEach((file) => {
-    if (file !== ".git" && file !== ".gitignore") {
-      deleteDir(file);
-    }
-  });
+  cleanMasterBranch();
 
-  console.log("📥 Copying build files into master...");
+  console.log("📥 Copying built files into master branch...");
   copyDir(TEMP_DIR, ".");
 
-  console.log("📝 Committing and pushing...");
+  console.log("📝 Staging and committing changes...");
   run("git add .");
   try {
     run(`git commit -m "${COMMIT_MSG}"`);
   } catch (err) {
-    console.log("ℹ️ Nothing to commit.");
+    console.log("ℹ️ No changes to commit.");
   }
+
   run("git push");
 
-  console.log(`🔙 Switching back to '${SOURCE_BRANCH}'...`);
+  console.log(`🔙 Switching back to '${SOURCE_BRANCH}' branch...`);
   run(`git checkout ${SOURCE_BRANCH}`);
 
   console.log("🧽 Cleaning up temp folder...");
