@@ -10,6 +10,17 @@ const DEPLOY_BRANCH = "master";
 const SOURCE_BRANCH = "source";
 const COMMIT_MSG = "Deploying latest build";
 
+// preserve these files and folders while deploying branch
+const preserve = new Set([
+    ".git",
+    ".gitignore",
+    "README.md",
+    "readme.md",     
+    "LICENSE",
+    "license",
+    "node_modules"
+  ]);
+
 function run(cmd) {
   return execSync(cmd, { stdio: "inherit" });
 }
@@ -48,7 +59,7 @@ function cleanMasterBranch() {
   console.log("🧹 Cleaning old files from master branch (except .git and .gitignore)...");
   fs.readdirSync(".", { withFileTypes: true }).forEach((entry) => {
     const name = entry.name;
-    if (name === ".git" || name === ".gitignore" || name === "node_modules") return;
+    if (preserve.has(name)) return;
 
     const filePath = path.join(".", name);
     try {
