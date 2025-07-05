@@ -1,5 +1,5 @@
 .section {
-  min-height: calc(100vh - 140px);
+  min-height: calc(65vh - 140px);
   padding: 2rem;
   width: 80%;
   margin: 0 auto;

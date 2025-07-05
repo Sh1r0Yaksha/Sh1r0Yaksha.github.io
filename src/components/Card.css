@@ -60,3 +60,15 @@
     bottom: 50%;
     opacity: 1;
 }
+
+
+.carousel-card {
+    height: 20vh;
+    width: auto;
+    flex: 0 0 auto; /* This is crucial */
+}
+
+.carousel-card img {
+    height: 80%;
+    width: auto;
+}

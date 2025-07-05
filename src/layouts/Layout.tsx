@@ -74,7 +74,7 @@ export default function Layout() {
         </div>
 
         <div className="footer-content">
-          <p>&copy; 2025 Akshat Singh. All rights reserved.</p>
+          <p>Made by Akshat. Feel free to use it as a template anywhere😊</p>
         </div>
       </footer>
     </div>
