@@ -48,7 +48,7 @@ function cleanMasterBranch() {
   console.log("🧹 Cleaning old files from master branch (except .git and .gitignore)...");
   fs.readdirSync(".", { withFileTypes: true }).forEach((entry) => {
     const name = entry.name;
-    if (name === ".git" || name === ".gitignore") return;
+    if (name === ".git" || name === ".gitignore" || name === "node_modules") return;
 
     const filePath = path.join(".", name);
     try {

@@ -1,7 +1,7 @@
 import { MapContainer, TileLayer, Marker, Popup} from 'react-leaflet'
 import type { LatLngTuple } from 'leaflet';
 import MarkerClusterGroup from 'react-leaflet-cluster';
-import markerData from './travel/markers.json';
+import markerData from '../data/travel/markers.json';
 
 import 'leaflet/dist/leaflet.css'
 import './Wanderings.css'
@@ -17,8 +17,6 @@ export const markers: Marker[] = markerData as Marker[];
 
 export default function Wanderings() 
 {
-    
-
     return (
         <>
         <div className='body'>
