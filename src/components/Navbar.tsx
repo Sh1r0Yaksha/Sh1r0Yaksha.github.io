@@ -7,6 +7,7 @@ const navItems = [
   { href: '/', label: 'Home' },
   { href: '/projects', label: 'Projects' },
   { href: '/wanderings', label: 'Wanderings' },
+  { href: '/random', label: 'Random' },
 ];
 
 const Navbar: React.FC = () => {

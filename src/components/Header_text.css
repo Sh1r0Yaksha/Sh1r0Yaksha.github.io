@@ -1,0 +1,10 @@
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 80%;
+    padding: 10px 10px 50px 10px;
+    margin: 10px 10px 10px 10px;
+}

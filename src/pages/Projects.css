@@ -4,10 +4,6 @@
     align-items: center;
 }
 
-.header {
-    width: fit-content;
-}
-
 .projects-row {
     display: flex;
     flex-direction: row;

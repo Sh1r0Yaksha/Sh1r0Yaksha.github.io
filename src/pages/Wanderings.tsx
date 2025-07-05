@@ -2,9 +2,12 @@ import { MapContainer, TileLayer, Marker, Popup} from 'react-leaflet'
 import type { LatLngTuple } from 'leaflet';
 import MarkerClusterGroup from 'react-leaflet-cluster';
 import markerData from '../data/travel/markers.json';
+import Header_text from '../components/Header_text';
+import Header_title from '../components/Header_title';
 
 import 'leaflet/dist/leaflet.css'
 import './Wanderings.css'
+
 
 export type Marker = {
 id: string;
@@ -20,8 +23,8 @@ export default function Wanderings()
     return (
         <>
         <div className='body'>
-            <div className='gallery-text'>
-                <h1 id='gallery-welcome'>Welcome to my Wanderings</h1>
+            <Header_text>
+                <Header_title>Welcome to my Wanderings</Header_title>
                 <p>
                     I love traveling, so here's a map with markers showing the places I've been so far.
                     Click on a marker to read a short blog or note about the spot.
@@ -34,8 +37,7 @@ export default function Wanderings()
                     The work's still in progress, so it might take a while to fill in the full list with all the blogs — that is, if I can manage to keep my blogging time even half as consistent as my traveling, coding, and gaming time.
                     That said, the number of markers will only grow as time goes on — the journey's far from over.
                 </p>
-            </div>
-            
+            </Header_text>
             <div className='map-container'>
                 <MapContainer center={[23.2858, 77.2755]} zoom={2} scrollWheelZoom={true}>
                     <TileLayer

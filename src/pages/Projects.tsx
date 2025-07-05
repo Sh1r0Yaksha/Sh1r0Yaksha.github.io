@@ -1,5 +1,7 @@
 import Section from "../components/Section";
 import Card from '../components/Card';
+import Header_text from "../components/Header_text";
+import Header_title from "../components/Header_title";
 import './Projects.css';
 
 import BS_Project from '../assets/documents/BS_Project.pdf'
@@ -13,10 +15,15 @@ import Bioinfo from '../assets/images/Bioinfo.png';
 import BioStatistics from '../assets/images/BioStatistics.png';
 import Convex_Hull from '../assets/images/Convex Hull.png';
 
+
 export default function Projects() {
   return (
     <div className="body">
-      <h1 className="header">Projects and Ongoing Work</h1>
+      <Header_text>
+        <Header_title>
+          Projects and Ongoing Work
+        </Header_title>
+      </Header_text>      
       <Section id="Projects">
         <div className="projects-row">
           <Card 
