@@ -1,11 +1,11 @@
-import Card from '../components/Card'
+// import Card from '../components/Card'
 import Header_text from '../components/Header_text'
 import Header_title from '../components/Header_title'
 import Carousel from '../components/Carousel'
+import Table from '../components/Table'
 import Section from '../components/Section'
 import './Random.css'
-
-import Ame from '../assets/images/Ame.png'
+import moviesJSON from '../data/trackers/movies.json'
 
 export default function Random() {
     return (
@@ -50,11 +50,9 @@ export default function Random() {
             <Section id='Tracker'>
                 <Header_text>
                     <Header_title>
-                        <a href='' target='_blank'> Movies</a>
+                        <a href='/random/movies' target='_blank'> Movies</a>
                     </Header_title>
-                    <p>
-                        Table of movies
-                    </p>
+                    <Table jsonData={moviesJSON} initialVisibleRows={3} href='/random/movies'/>
                 </Header_text>
 
                 <Header_text>
