@@ -7,6 +7,8 @@ import Section from '../components/Section'
 import './Random.css'
 import moviesJSON from '../data/trackers/movies.json'
 import { Link } from 'react-router-dom'
+import Card from '../components/Card'
+import Jumpy_Moo_img from '../assets/images/jumpy_Moo.png'
 
 export default function Random() {
     return (
@@ -44,6 +46,15 @@ export default function Random() {
                 </Header_text>
                 <Carousel>
                     <>
+                        <Card
+                            href='gamedev/jumpy_moo'
+                            img_src={Jumpy_Moo_img}
+                            img_alt="Jumpy Moo"
+                            display_text="A google dino game clone. Made using Unity"
+                            external={false}
+                            custom_class='carousel-card'>
+                                A game made using unity with custom assets for webGL.
+                        </Card>
                     </>
                 </Carousel>
             </Section>
