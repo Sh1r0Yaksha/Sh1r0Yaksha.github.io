@@ -10,6 +10,7 @@ import Movies from "./pages/random/Movies";
 import Games from "./pages/random/Games";
 import Anime from "./pages/random/Anime";
 import Reading from "./pages/random/Reading";
+import Jumpy_Moo from "./pages/random/gamedev/Jumpy_Moo";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="wanderings" element={<Wanderings />} />
           <Route path="random" element={<Random />} />
           <Route path="random/gamedev" element={<Gamedev />} />
+          <Route path="random/gamedev/jumpy_moo" element={<Jumpy_Moo />} />
           <Route path="random/movies" element={<Movies />} />
           <Route path="random/games" element={<Games />} />
           <Route path="random/anime" element={<Anime />} />

@@ -18,7 +18,8 @@ export default function Gamedev() {
                         href='jumpy_moo'
                         img_src=''
                         img_alt="Jumpy Moo"
-                        display_text="A google dino game clone. Made using Unity">
+                        display_text="A google dino game clone. Made using Unity"
+                        external={false}>
                             Text
                     </Card>
                 </div>

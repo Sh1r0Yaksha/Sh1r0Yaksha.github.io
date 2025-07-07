@@ -10,11 +10,23 @@ interface CardProps {
     display_text: string;
     custom_class?: string;
     children?: ReactNode;
+    external?: boolean;
 }
 
-const Card: React.FC<CardProps> = ({ href, img_src, img_alt, display_text, custom_class, children }) => {
+const Card: React.FC<CardProps> = ({
+  href,
+  img_src,
+  img_alt,
+  display_text,
+  custom_class,
+  children,
+  external = true,
+}) => {
     return (
-            <Link className={`card ${custom_class || ""}`} to={href} target="_blank">
+            <Link 
+                className={`card ${custom_class || ""}`} 
+                to={href}
+                target={external ? "_blank" : undefined}>
             <img src={img_src} alt={img_alt} loading="lazy"/>
             <div className="content">
                 <p>{display_text}</p>
