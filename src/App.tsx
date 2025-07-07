@@ -5,6 +5,11 @@ import Projects from "./pages/Projects";
 import Wanderings from "./pages/Wanderings";
 import NotFound from "./pages/NotFound";
 import Random from "./pages/Random";
+import Gamedev from "./pages/random/Gamedev";
+import Movies from "./pages/random/Movies";
+import Games from "./pages/random/Games";
+import Anime from "./pages/random/Anime";
+import Reading from "./pages/random/Reading";
 
 function App() {
   return (
@@ -15,6 +20,11 @@ function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="wanderings" element={<Wanderings />} />
           <Route path="random" element={<Random />} />
+          <Route path="random/gamedev" element={<Gamedev />} />
+          <Route path="random/movies" element={<Movies />} />
+          <Route path="random/games" element={<Games />} />
+          <Route path="random/anime" element={<Anime />} />
+          <Route path="random/reading" element={<Reading />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

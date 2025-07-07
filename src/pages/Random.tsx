@@ -6,6 +6,7 @@ import Table from '../components/Table'
 import Section from '../components/Section'
 import './Random.css'
 import moviesJSON from '../data/trackers/movies.json'
+import { Link } from 'react-router-dom'
 
 export default function Random() {
     return (
@@ -35,7 +36,7 @@ export default function Random() {
             <Section id='Games'>
                 <Header_text>
                     <Header_title>
-                        <a href='' target='_blank'> Game Development</a>
+                        <Link to='gamedev'> Game Development </Link>
                     </Header_title>
                     <p>
                         Here are a few games I made during my free time
@@ -50,14 +51,14 @@ export default function Random() {
             <Section id='Tracker'>
                 <Header_text>
                     <Header_title>
-                        <a href='/random/movies' target='_blank'> Movies</a>
+                        <Link to='movies'> Movies</Link>
                     </Header_title>
                     <Table jsonData={moviesJSON} initialVisibleRows={3} href='/random/movies'/>
                 </Header_text>
 
                 <Header_text>
                     <Header_title>
-                        <a href='' target='_blank'> Games</a>
+                        <Link to='games'> Games</Link>
                     </Header_title>
                     <p>
                         Table of games
@@ -66,7 +67,7 @@ export default function Random() {
 
                 <Header_text>
                     <Header_title>
-                        <a href='' target='_blank'> Anime</a>
+                        <Link to='anime'> Anime</Link>
                     </Header_title>
                     <p>
                         Table of anime
@@ -74,7 +75,7 @@ export default function Random() {
                 </Header_text>
                 <Header_text>
                     <Header_title>
-                        <a href='' target='_blank'> Manga, Books, LNs</a>
+                        <Link to='reading'> Manga, Books, LNs</Link>
                     </Header_title>
                     <p>
                         Table of reads 
@@ -84,9 +85,8 @@ export default function Random() {
             
             <Section id='jokes'>
                 <Header_text>
-                    <Header_title>Tech Jokes</Header_title>
+                    <Header_title>Jokes</Header_title>
                     <p>
-                        xkcd
                     </p>
                 </Header_text>
             </Section>
