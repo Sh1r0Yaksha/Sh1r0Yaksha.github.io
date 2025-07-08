@@ -64,8 +64,9 @@ export default function Random() {
                     <Header_title>
                         <Link to='movies'> Movies</Link>
                     </Header_title>
-                    <Table jsonData={moviesJSON} initialVisibleRows={3} href='/random/movies'/>
                 </Header_text>
+                    <Table jsonData={moviesJSON} initialVisibleRows={3} href='/random/movies'/>
+                
 
                 <Header_text>
                     <Header_title>

@@ -56,6 +56,10 @@ const Table: React.FC<{ jsonData: TableData; initialVisibleRows?: number, href: 
       : String(valB).localeCompare(String(valA));
   });
 
+  const getLowercaseTrimmed = (input: string) => {
+    return(input.toLowerCase().replace(/\s+/g, ""));
+  }
+
   const getSortIcon = (col: string) => {
         if (sortColumn === col) {
         return sortOrder === 'asc'
@@ -93,7 +97,8 @@ const Table: React.FC<{ jsonData: TableData; initialVisibleRows?: number, href: 
         </thead>
         <tbody>
           {sortedData.slice(0, visibleRows).map((row, index) => (
-            <tr key={index}>
+            <tr key={index}
+              onClick={() => {navigate(getLowercaseTrimmed(row['name'].toString()))}}>
               {columns.map(col => (
                 <td key={col.key}>{row[col.key]}</td>
               ))}

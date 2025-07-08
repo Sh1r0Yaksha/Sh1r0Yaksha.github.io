@@ -5,8 +5,8 @@
     { "key": "rating", "label": "Rating (Out of 10)", "sortable": true }
   ],
   "rows": [
-    { "name": "Alice", "year": 2015, "rating": 7 },
-    { "name": "Bob", "year": 2018, "rating": 5 },
+    { "name": "Alice In Wonderland", "year": 2015, "rating": 7 },
+    { "name": "7 Deadly Sins", "year": 2018, "rating": 5 },
     { "name": "Charlie", "year": 2001, "rating": 4.5 },
     { "name": "Diana", "year": 2022, "rating": 7.5 },
     { "name": "Alice", "year": 2015, "rating": 7 },
