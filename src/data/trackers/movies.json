@@ -1,23 +1,26 @@
 {
   "columns": [
     { "key": "name", "label": "Name", "sortable": true },
-    { "key": "year", "label": "Release Year", "sortable": true },
+    { "key": "status", "label": "Status", "sortable": true},
     { "key": "rating", "label": "Rating (Out of 10)", "sortable": true }
   ],
   "rows": [
-    { "name": "Alice In Wonderland", "year": 2015, "rating": 7 },
-    { "name": "7 Deadly Sins", "year": 2018, "rating": 5 },
-    { "name": "Charlie", "year": 2001, "rating": 4.5 },
-    { "name": "Diana", "year": 2022, "rating": 7.5 },
-    { "name": "Alice", "year": 2015, "rating": 7 },
-    { "name": "Alice", "year": 2015, "rating": 7 },
-    { "name": "Alice", "year": 2015, "rating": 7 },
-    { "name": "Alice", "year": 2015, "rating": 7 },
-    { "name": "Alice", "year": 2015, "rating": 7 },
-    { "name": "Alice", "year": 2015, "rating": 7 },
-    { "name": "Alice", "year": 2015, "rating": 7 },
-    { "name": "Alice", "year": 2015, "rating": 7 },
-    { "name": "Alice", "year": 2015, "rating": 7 },
-    { "name": "Alice", "year": 2015, "rating": 7 }
+    { "name": "Alice In Wonderland", "status": "watched" , "rating": 7 },
+    { "name": "7 Deadly Sins", "status": "Plan to Watch", "rating": 5 },
+    { "name": "Charlie", "status": "watched" ,"rating": 4.5 },
+    { "name": "Diana", "status": "watched" , "rating": 7.5 },
+    { "name": "A", "status": "watched" , "rating": 7 },
+    { "name": "Al", "status": "watched" , "rating": 7 },
+    { "name": "Ali", "status": "watched" , "rating": 7 },
+    { "name": "Alic", "status": "watched" , "rating": 7 },
+    { "name": "Alice", "status": "watched" , "rating": 7 },
+    { "name": "Alice I", "status": "watched" , "rating": 7 },
+    { "name": "Alice In", "status": "watched" , "rating": 7 },
+    { "name": "Alice In W", "status": "watched" , "rating": 7 },
+    { "name": "Alice in Wo", "status": "watched" , "rating": 7 },
+    { "name": "Alice in Won", "status": "watched" , "rating": 7 },
+    { "name": "Alice in Wond", "status": "watched" , "rating": 7 },
+    { "name": "Alice in Wode", "status": "watched" , "rating": 7 },
+    { "name": "Alice in Wonder", "status": "watched" , "rating": 7 }
   ]
 }

@@ -1,0 +1,26 @@
+{
+  "columns": [
+    { "key": "name", "label": "Name", "sortable": true },
+    { "key": "status", "label": "Status", "sortable": true},
+    { "key": "rating", "label": "Rating (Out of 10)", "sortable": true }
+  ],
+  "rows": [
+    { "name": "Alice In Wonderland", "status": "Finished" , "rating": 7 },
+    { "name": "7 Deadly Sins", "status": "Plan to Play", "rating": 5 },
+    { "name": "Charlie", "status": "Playing" ,"rating": 4.5 },
+    { "name": "Diana", "status": "Dropped" , "rating": 7.5 },
+    { "name": "Alice", "status": "Watched" , "rating": 7 },
+    { "name": "Alice", "status": "Watched" , "rating": 7 },
+    { "name": "Alice", "status": "Watched" , "rating": 7 },
+    { "name": "Alice", "status": "Watched" , "rating": 7 },
+    { "name": "Alice", "status": "Watched" , "rating": 7 },
+    { "name": "Alice", "status": "Watched" , "rating": 7 },
+    { "name": "Alice", "status": "Watched" , "rating": 7 },
+    { "name": "Alice", "status": "Watched" , "rating": 7 },
+    { "name": "Alice", "status": "Watched" , "rating": 7 },
+    { "name": "Alice", "status": "Watched" , "rating": 7 },
+    { "name": "Alice", "status": "Watched" , "rating": 7 },
+    { "name": "Alice", "status": "Watched" , "rating": 7 },
+    { "name": "Alice", "status": "Watched" , "rating": 7 }
+  ]
+}

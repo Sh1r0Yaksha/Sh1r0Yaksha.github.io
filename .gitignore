@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 .vite
+TODO.md
 
 # Editor directories and files
 .vscode/*

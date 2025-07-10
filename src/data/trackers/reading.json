@@ -1,0 +1,26 @@
+{
+  "columns": [
+    { "key": "name", "label": "Name", "sortable": true },
+    { "key": "status", "label": "Status", "sortable": true},
+    {"key": "type", "label": "Type of Book", "sortable": true},
+    { "key": "rating", "label": "Rating (Out of 10)", "sortable": true }
+  ],
+  "rows": [
+    { "name": "Alice In Wonderland", "status": "Read", "type": "Book" , "rating": 7 },
+    { "name": "7 Deadly Sins", "status": "Plan to Read", "type": "Manga",  "rating": 5 },
+    { "name": "Charlie", "status": "Reading" , "type": "Light Novel", "rating": 4.5 },
+    { "name": "Diana", "status": "Dropped", "type": "Manhwa",  "rating": 7.5 },
+    { "name": "7 Deadly Sins", "status": "Plan to Watch", "type": "Manga",  "rating": 5 },
+    { "name": "7 Deadly Sins", "status": "Plan to Watch", "type": "Manga",  "rating": 5 },
+    { "name": "7 Deadly Sins", "status": "Plan to Watch", "type": "Manga",  "rating": 5 },
+    { "name": "7 Deadly Sins", "status": "Plan to Watch", "type": "Manga",  "rating": 5 },
+    { "name": "7 Deadly Sins", "status": "Plan to Watch", "type": "Manga",  "rating": 5 },
+    { "name": "7 Deadly Sins", "status": "Plan to Watch", "type": "Manga",  "rating": 5 },
+    { "name": "7 Deadly Sins", "status": "Plan to Watch", "type": "Manga",  "rating": 5 },
+    { "name": "7 Deadly Sins", "status": "Plan to Watch", "type": "Manga",  "rating": 5 },
+    { "name": "7 Deadly Sins", "status": "Plan to Watch", "type": "Manga",  "rating": 5 },
+    { "name": "7 Deadly Sins", "status": "Plan to Watch", "type": "Manga",  "rating": 5 },
+    { "name": "7 Deadly Sins", "status": "Plan to Watch", "type": "Manga",  "rating": 5 },
+    { "name": "7 Deadly Sins", "status": "Plan to Watch", "type": "Manga",  "rating": 5 }
+  ]
+}

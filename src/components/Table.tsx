@@ -22,16 +22,21 @@ interface TableData {
 
 type SortOrder = 'asc' | 'desc';
 
-const Table: React.FC<{ jsonData: TableData; initialVisibleRows?: number, href: string }> = ({
+const Table: React.FC<{ jsonData: TableData; initialVisibleRows?: number, href: string, isOnPage?: boolean}> = ({
   jsonData,
   initialVisibleRows = 5,
-  href
+  href,
+  isOnPage = false,
 }) => {
   const { columns, rows } = jsonData;
+
 
   const [visibleRows, setVisibleRows] = useState(initialVisibleRows);
   const [sortColumn, setSortColumn] = useState<string | null>(null);
   const [sortOrder, setSortOrder] = useState<SortOrder>('asc');
+  const [startingIndex, setStartingIndex] = useState(0);
+
+  const maxVisibleRows: number = isOnPage ? 7 : 9;
 
   const handleSortClick = (columnKey: string) => {
     if (sortColumn === columnKey) {
@@ -96,7 +101,8 @@ const Table: React.FC<{ jsonData: TableData; initialVisibleRows?: number, href: 
           </tr>
         </thead>
         <tbody>
-          {sortedData.slice(0, visibleRows).map((row, index) => (
+          
+          {sortedData.slice(startingIndex, startingIndex + visibleRows).map((row, index) => (
             <tr key={index}
               onClick={() => {navigate(getLowercaseTrimmed(row['name'].toString()))}}>
               {columns.map(col => (
@@ -110,10 +116,24 @@ const Table: React.FC<{ jsonData: TableData; initialVisibleRows?: number, href: 
         <button className="view-more-button" 
                 onClick={
                     () => {
-                        if (visibleRows < 9)
-                            setVisibleRows(prev => prev + initialVisibleRows)
-                        else
+                        if (isOnPage) {
+                          if (visibleRows < maxVisibleRows)
+                            setVisibleRows(maxVisibleRows)
+                          else {
+                           setStartingIndex((prev) => {
+                              if (prev + maxVisibleRows < rows.length)
+                                return (prev + maxVisibleRows)
+                              else
+                                return 0
+                           } )
+                          }
+                        }
+                        else {
+                          if (visibleRows < maxVisibleRows)
+                            setVisibleRows(prev => (prev + initialVisibleRows))
+                          else
                             navigate(href)
+                        }
                     }
                         
                     }>
