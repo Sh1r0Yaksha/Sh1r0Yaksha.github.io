@@ -9,6 +9,9 @@ import moviesJSON from '../data/trackers/movies.json'
 import { Link } from 'react-router-dom'
 import Card from '../components/Card'
 import Jumpy_Moo_img from '../assets/images/jumpy_Moo.png'
+import XKCD from '../components/XKCD'
+import JokesAPI from '../components/JokesAPI'
+import DadJokes from '../components/DadJokes'
 
 export default function Random() {
     return (
@@ -98,9 +101,10 @@ export default function Random() {
             <Section id='jokes'>
                 <Header_text>
                     <Header_title>Jokes</Header_title>
-                    <p>
-                    </p>
+                    <JokesAPI></JokesAPI>
                 </Header_text>
+                <XKCD></XKCD>
+                <DadJokes></DadJokes>
             </Section>
         </>
     )

@@ -1,0 +1,18 @@
+.xkcd {
+    width: 100%;
+    padding-bottom: 15%;
+}
+
+.xkcd img {
+    width: 95%;
+}
+
+.xkcd p{
+    font-size: small;
+}
+
+
+.attribute {
+    text-align: right;
+    font-size: xx-small;
+}
