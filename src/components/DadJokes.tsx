@@ -45,7 +45,7 @@ const DadJokes: React.FC = () => {
         <>
             <h1>Dad Joke</h1>
             <p>{dadJoke.joke}</p>
-            <Link to={'https://icanhazdadjoke.com/'} className="attribute">icanhazdadjoke</Link>
+            <Link to={'https://icanhazdadjoke.com/'} className="attribute" target="_blank">icanhazdadjoke</Link>
         </>
     )
 }

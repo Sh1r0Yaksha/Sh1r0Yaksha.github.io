@@ -31,7 +31,7 @@ const JokesAPI: React.FC = () => {
     return(
         <>
             <p>{joke}</p>
-            <Link to={'https://v2.jokeapi.dev'} className="attribute">JokesAPI</Link>
+            <Link to={'https://v2.jokeapi.dev'} className="attribute" target="_blank">JokesAPI</Link>
         </>
     )
 }

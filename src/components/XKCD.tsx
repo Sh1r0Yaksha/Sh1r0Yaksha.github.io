@@ -52,7 +52,7 @@ const XKCD: React.FC = () => {
         alt={comic.alt}
       />
       <p>{comic.alt}</p>
-      <p className='attribute'><Link to='https://github.com/mrmartineau/xkcd-api'>xkcd-api</Link></p>
+      <p className='attribute'><Link to='https://github.com/mrmartineau/xkcd-api' target="_blank">xkcd-api</Link></p>
     </div>
   );
 };
