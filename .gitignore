@@ -1,5 +1,5 @@
 node_modules
 .vite
 python
-.env
+.env.local
 TODO.md
