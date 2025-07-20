@@ -1,49 +1,45 @@
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { useLocation } from 'react-router-dom';
-import { supabase } from "../supabaseClient";
-import type { Tables } from "../database.types.ts";
 import './TravelBlogs.css';
 import Header_text from './Header_text';
 import Header_title from './Header_title.tsx';
 import Section from './Section.tsx';
+import Places from '../data/travel/Travel.json'
+
+interface PlaceProp {
+  id_place: string;
+  Latitude: number;
+  Longitude: number;
+  Place: string;
+  
+}
 
 export default function TravelBlog() {
   const location = useLocation();
 
-  const [travelID, setTravelID] = useState<number>(0);
-  const [PlaceBlog, SetPlaceBlog] = useState<Tables<'Travel'>>();
+  const [PlaceID, setPlaceID] = useState<string>('');
   const [markdown, setMarkdown] = useState<string>('');
+  const [PlaceBlog, setPlaceBlog] = useState<PlaceProp | undefined>(undefined);
 
-  // 🟢 Step 1: Set travelID from location.state ONCE
+  // 🟢 Step 1: Set id_pace from location.state ONCE
   useEffect(() => {
-    const stateData = location.state as number | undefined;
+    const stateData = location.state as string | undefined;
     if (stateData) {
-      setTravelID(stateData);
+      setPlaceID(stateData);
     } else {
-      console.error("Missing route state! Expected travelID in location.state");
+      console.error("Missing route state! Expected id_place in location.state");
     }
   }, [location.state]);
 
-  // 🟢 Step 2: Fetch place info when travelID is available
+  // 🟢 Step 2: Fetch place info when id_pace is available
   useEffect(() => {
-    if (!travelID) return;
-    if (travelID){
-        async function fetchPlace() {
-        const { data, error } = await supabase
-            .from('Travel')
-            .select('*')
-            .eq('id', travelID)
-            .single<Tables<'Travel'>>();
-
-        if (error) {
-            console.error("Error fetching place from Supabase:", error.message);
-        } else {
-            SetPlaceBlog(data ?? undefined);
-        }}
-        fetchPlace();
+    if (!PlaceID) return;
+    else{
+      const place = Places.find(item => item.id_place == PlaceID);
+      setPlaceBlog(place || undefined)
     }
-  }, [travelID]);
+  }, [PlaceID]);
 
   // 🟢 Step 3: Load markdown after PlaceBlog is set
   useEffect(() => {
@@ -82,7 +78,6 @@ export default function TravelBlog() {
     }, [PlaceBlog]);
 
 
-  // Handle missing data case
   if (!PlaceBlog) {
     return <div>No travel info found for this destination.</div>;
   }

@@ -1,0 +1,194 @@
+[
+  {
+    "id_place": "iiserb",
+    "Latitude": 23.2858,
+    "Longitude": 77.2755,
+    "Place": "Indian Institute of Science Education and Research Bhopal"
+  },
+  {
+    "id_place": "buxar",
+    "Latitude": 25.5647,
+    "Longitude": 83.9777,
+    "Place": "Buxar"
+  },
+  {
+    "id_place": "ekdaar",
+    "Latitude": 25.4234,
+    "Longitude": 83.9228,
+    "Place": "Ekdaar"    
+  },
+  {
+    "id_place": "varanasi",
+    "Latitude": 25.3176,
+    "Longitude": 82.9739,
+    "Place": "Varanasi"
+  },
+  {
+    "id_place": "indore",
+    "Latitude": 22.7196,
+    "Longitude": 75.8577,
+    "Place": "Indore"
+  },
+  {
+    "id_place": "ghazipur",
+    "Latitude": 25.5878,
+    "Longitude": 83.5783,
+    "Place": "Ghazipur"
+  },
+  {
+    "id_place": "betabar",
+    "Latitude": 25.495343,
+    "Longitude": 83.584871,
+    "Place": "Betabar Kalan"
+  },
+  {
+    "id_place": "lucknow",
+    "Latitude": 26.8467,
+    "Longitude": 80.9462,
+    "Place": "Lucknow"
+  },
+  {
+    "id_place": "kanpur",
+    "Latitude": 26.4499,
+    "Longitude": 80.3319,
+    "Place": "Kanpur"
+  },
+  {
+    "id_place": "prayagraj",
+    "Latitude": 25.4683,
+    "Longitude": 81.8546,
+    "Place": "Prayagraj"
+  },
+  {
+    "id_place": "new_delhi",
+    "Latitude": 28.6139,
+    "Longitude": 77.2088,
+    "Place": "New Delhi"
+  },
+  {
+    "id_place": "noida",
+    "Latitude": 28.5355,
+    "Longitude": 77.391,
+    "Place": "Noida"
+  },
+  {
+    "id_place": "mathura",
+    "Latitude": 27.4924,
+    "Longitude": 77.6737,
+    "Place": "Mathura"
+  },
+  {
+    "id_place": "agra",
+    "Latitude": 27.1767,
+    "Longitude": 78.0081,
+    "Place": "Agra"
+  },
+  {
+    "id_place": "jalandhar",
+    "Latitude": 31.326,
+    "Longitude": 75.5762,
+    "Place": "Jalandhar"
+  },
+  {
+    "id_place": "amritsar",
+    "Latitude": 31.634,
+    "Longitude": 74.8723,
+    "Place": "Amritsar"
+  },
+  {
+    "id_place": "wagah",
+    "Latitude": 31.6048,
+    "Longitude": 74.5741,
+    "Place": "Attari - Wagah Border"
+  },
+  {
+    "id_place": "jwala_mandir",
+    "Latitude": 31.8754,
+    "Longitude": 76.3241,
+    "Place": "Shri Jwalamukhi Mata Shaktipeeth ji Temple"
+  },
+  {
+    "id_place": "kota",
+    "Latitude": 25.2138,
+    "Longitude": 75.8648,
+    "Place": "Kota"
+  },
+  {
+    "id_place": "bhopal",
+    "Latitude": 23.2599,
+    "Longitude": 77.4126,
+    "Place": "Bhopal"
+  },
+  {
+    "id_place": "vidisha",
+    "Latitude": 23.5236,
+    "Longitude": 77.814,
+    "Place": "Vidisha"
+  },
+  {
+    "id_place": "surat",
+    "Latitude": 21.1702,
+    "Longitude": 72.8311,
+    "Place": "Surat"
+  },
+  {
+    "id_place": "valsad",
+    "Latitude": 20.5992,
+    "Longitude": 72.9342,
+    "Place": "Valsad"
+  },
+  {
+    "id_place": "vapi",
+    "Latitude": 20.3893,
+    "Longitude": 72.9106,
+    "Place": "Vapi"
+  },
+  {
+    "id_place": "pune",
+    "Latitude": 18.5246,
+    "Longitude": 73.8786,
+    "Place": "Pune"
+  },
+  {
+    "id_place": "nashik",
+    "Latitude": 19.9993,
+    "Longitude": 73.79,
+    "Place": "Nashik"
+  },
+  {
+    "id_place": "shirdi",
+    "Latitude": 19.7645,
+    "Longitude": 74.4762,
+    "Place": "Shirdi"
+  },
+  {
+    "id_place": "bangalore",
+    "Latitude": 12.9629,
+    "Longitude": 77.5775,
+    "Place": "Bengalore"
+  },
+  {
+    "id_place": "mysore",
+    "Latitude": 12.2958,
+    "Longitude": 76.6394,
+    "Place": "Mysore"
+  },
+  {
+    "id_place": "patna",
+    "Latitude": 25.5941,
+    "Longitude": 85.1376,
+    "Place": "Patna"
+  },
+  {
+    "id_place": "rajgir",
+    "Latitude": 25.0262,
+    "Longitude": 85.4174,
+    "Place": "Rajgir"
+  },
+  {
+    "id_place": "akola",
+    "Latitude": 20.7002,
+    "Longitude": 77.0082,
+    "Place": "Akola"
+  }
+]

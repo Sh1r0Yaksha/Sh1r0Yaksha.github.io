@@ -1,54 +1,22 @@
-import { useEffect, useState } from "react";
+import Places from '../data/travel/Travel.json'
+
 import { MapContainer, TileLayer, Marker} from 'react-leaflet'
 import type { LatLngTuple } from 'leaflet';
-import { supabase } from "../supabaseClient";
-import type { Tables} from "../database.types.ts";
 import { useNavigate } from 'react-router-dom';
 import MarkerClusterGroup from 'react-leaflet-cluster';
-import markerData from '../data/travel/markers.json';
 import Header_text from '../components/Header_text';
 import Header_title from '../components/Header_title';
 
 import 'leaflet/dist/leaflet.css'
 import './Wanderings.css'
 
-
-
-export type Marker = {
-id: string;
-geocode: LatLngTuple;
-popup: string;
-href: string;
-};
-
-export const markers: Marker[] = markerData as Marker[];
-
 export default function Wanderings() 
 {
     const navigate = useNavigate();
 
-    const slugify = (str: string) =>
-        str.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
-
-
-    const handleMarkerClick = (popup: string, id:number) => {
-        navigate(`/wanderings/${slugify(popup)}`, { state: id });
+    const handleMarkerClick = (id_place: string) => {
+        navigate(`/wanderings/${id_place}`, { state: id_place });
     };
-
-    const [Places, setPlaces] = useState<Tables<'Travel'>[]>([]);
-
-    useEffect(() => {
-        async function fetchPlaces() {
-            const { data } = await supabase
-            .from('Travel')
-            .select("*");
-            setPlaces(data ?? [])
-        }
-
-        fetchPlaces();
-    }, []);
-
-
 
     return (
         <>
@@ -81,7 +49,7 @@ export default function Wanderings()
                             position={[place.Latitude, place.Longitude] as LatLngTuple}
                             eventHandlers={{
                                 click: () => {
-                                handleMarkerClick(place.id_place, place.id);
+                                handleMarkerClick(place.id_place);
                                 },
                             }}>
                          </Marker>   

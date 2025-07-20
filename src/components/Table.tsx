@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './Table.css';
 import sort_desc from '../assets/images/sort_desc.png'
 import sort_asc from '../assets/images/sort_asc.png'
@@ -13,9 +13,11 @@ interface Column {
 
 interface Row {
   [key: string]: string | number;
+  id: string;
 }
 
 interface TableData {
+  type: string;
   columns: Column[];
   rows: Row[];
 }
@@ -28,7 +30,11 @@ const Table: React.FC<{ jsonData: TableData; initialVisibleRows?: number, href: 
   href,
   isOnPage = false,
 }) => {
-  const { columns, rows } = jsonData;
+
+  const {type, columns, rows } = jsonData;
+
+  const navigate = useNavigate();
+  const location = useLocation();
 
 
   const [visibleRows, setVisibleRows] = useState(initialVisibleRows);
@@ -46,6 +52,14 @@ const Table: React.FC<{ jsonData: TableData; initialVisibleRows?: number, href: 
       setSortOrder('asc');
     }
   };
+  
+  const handleItemClick = (type: string, id: string) => {
+    if (location.pathname.includes(type)) {
+      navigate(`${id}`, { state: { type, id } })  
+    } else {
+      navigate(`${type}/${id}`, { state: { type, id } })
+    }
+  }
 
   const sortedData = [...rows].sort((a, b) => {
     if (!sortColumn) return 0;
@@ -61,21 +75,16 @@ const Table: React.FC<{ jsonData: TableData; initialVisibleRows?: number, href: 
       : String(valB).localeCompare(String(valA));
   });
 
-  const getLowercaseTrimmed = (input: string) => {
-    return(input.toLowerCase().replace(/\s+/g, ""));
-  }
-
   const getSortIcon = (col: string) => {
-        if (sortColumn === col) {
-        return sortOrder === 'asc'
-            ? <img src={sort_asc} alt="Sort Ascending" className="sort-icon" title="ascending"/>
-            : <img src={sort_desc} alt="Sort Descending" className="sort-icon"  title="descending"/>;
-        } else {
-        return <img src={sort} alt="Sort" className="sort-icon" title='Sort'/>;
-        }
-    };
-
-    var navigate = useNavigate();
+    if (sortColumn === col) {
+    return sortOrder === 'asc'
+        ? <img src={sort_asc} alt="Sort Ascending" className="sort-icon" title="ascending"/>
+        : <img src={sort_desc} alt="Sort Descending" className="sort-icon"  title="descending"/>;
+    } else {
+    return <img src={sort} alt="Sort" className="sort-icon" title='Sort'/>;
+    }
+  };
+  
 
   return (
     <div className="table-container">
@@ -104,7 +113,7 @@ const Table: React.FC<{ jsonData: TableData; initialVisibleRows?: number, href: 
           
           {sortedData.slice(startingIndex, startingIndex + visibleRows).map((row, index) => (
             <tr key={index}
-              onClick={() => {navigate(getLowercaseTrimmed(row['name'].toString()))}}>
+              onClick={() => {handleItemClick(type, row['id'])}}>
               {columns.map(col => (
                 <td key={col.key}>{row[col.key]}</td>
               ))}

@@ -1,26 +1,22 @@
 {
+  "type": "movies",
   "columns": [
     { "key": "name", "label": "Name", "sortable": true },
     { "key": "status", "label": "Status", "sortable": true},
     { "key": "rating", "label": "Rating (Out of 10)", "sortable": true }
   ],
   "rows": [
-    { "name": "Alice In Wonderland", "status": "watched" , "rating": 7 },
-    { "name": "7 Deadly Sins", "status": "Plan to Watch", "rating": 5 },
-    { "name": "Charlie", "status": "watched" ,"rating": 4.5 },
-    { "name": "Diana", "status": "watched" , "rating": 7.5 },
-    { "name": "A", "status": "watched" , "rating": 7 },
-    { "name": "Al", "status": "watched" , "rating": 7 },
-    { "name": "Ali", "status": "watched" , "rating": 7 },
-    { "name": "Alic", "status": "watched" , "rating": 7 },
-    { "name": "Alice", "status": "watched" , "rating": 7 },
-    { "name": "Alice I", "status": "watched" , "rating": 7 },
-    { "name": "Alice In", "status": "watched" , "rating": 7 },
-    { "name": "Alice In W", "status": "watched" , "rating": 7 },
-    { "name": "Alice in Wo", "status": "watched" , "rating": 7 },
-    { "name": "Alice in Won", "status": "watched" , "rating": 7 },
-    { "name": "Alice in Wond", "status": "watched" , "rating": 7 },
-    { "name": "Alice in Wode", "status": "watched" , "rating": 7 },
-    { "name": "Alice in Wonder", "status": "watched" , "rating": 7 }
+    {
+      "id":"f1",
+      "name": "F1",
+      "status": "Watched",
+      "rating": 6
+    },
+    {
+      "id":"superman(2025)",
+      "name": "Superman (2025)",
+      "status": "Watched",
+      "rating": 7
+    }
   ]
 }
