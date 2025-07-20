@@ -6,22 +6,17 @@
     { "key": "rating", "label": "Rating (Out of 10)", "sortable": true }
   ],
   "rows": [
-    { "name": "Alice In Wonderland", "status": "Finished" , "rating": 7 },
-    { "name": "7 Deadly Sins", "status": "Plan to Play", "rating": 5 },
-    { "name": "Charlie", "status": "Playing" ,"rating": 4.5 },
-    { "name": "Diana", "status": "Dropped" , "rating": 7.5 },
-    { "name": "Alice", "status": "Watched" , "rating": 7 },
-    { "name": "Alice", "status": "Watched" , "rating": 7 },
-    { "name": "Alice", "status": "Watched" , "rating": 7 },
-    { "name": "Alice", "status": "Watched" , "rating": 7 },
-    { "name": "Alice", "status": "Watched" , "rating": 7 },
-    { "name": "Alice", "status": "Watched" , "rating": 7 },
-    { "name": "Alice", "status": "Watched" , "rating": 7 },
-    { "name": "Alice", "status": "Watched" , "rating": 7 },
-    { "name": "Alice", "status": "Watched" , "rating": 7 },
-    { "name": "Alice", "status": "Watched" , "rating": 7 },
-    { "name": "Alice", "status": "Watched" , "rating": 7 },
-    { "name": "Alice", "status": "Watched" , "rating": 7 },
-    { "name": "Alice", "status": "Watched" , "rating": 7 }
+    {
+      "id":"valorant",
+      "name": "Valorant",
+      "status": "Played",
+      "rating": 3
+    },
+    {
+      "id":"hollow_knight",
+      "name": "Hollow Knight",
+      "status": "Played",
+      "rating": 9
+    }
   ]
 }
