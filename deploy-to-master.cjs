@@ -18,7 +18,9 @@ const preserve = new Set([
     "readme.md",     
     "LICENSE",
     "license",
-    "node_modules"
+    "node_modules",
+    "TODO.md",
+    ".env.local"
   ]);
 
 function run(cmd) {
