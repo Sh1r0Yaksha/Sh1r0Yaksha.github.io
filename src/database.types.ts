@@ -43,26 +43,23 @@ export type Database = {
         Row: {
           id: number
           id_place: string
-          Latitude: number | null
-          Longitude: number | null
-          md_file_location: string | null
-          Place: string | null
+          Latitude: number
+          Longitude: number
+          Place: string
         }
         Insert: {
           id?: number
-          id_place: string
-          Latitude?: number | null
-          Longitude?: number | null
-          md_file_location?: string | null
-          Place?: string | null
+          id_place?: string
+          Latitude?: number
+          Longitude?: number
+          Place?: string
         }
         Update: {
           id?: number
           id_place?: string
-          Latitude?: number | null
-          Longitude?: number | null
-          md_file_location?: string | null
-          Place?: string | null
+          Latitude?: number
+          Longitude?: number
+          Place?: string
         }
         Relationships: []
       }

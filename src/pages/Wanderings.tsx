@@ -67,11 +67,6 @@ export default function Wanderings()
                     The work's still in progress, so it might take a while to fill in the full list with all the blogs — that is, if I can manage to keep my blogging time even half as consistent as my traveling, coding, and gaming time.
                     That said, the number of markers will only grow as time goes on — the journey's far from over.
                 </p>
-                <ul>
-                    {Places.map(place => (
-                    <li key={place.id}>{place.Place}</li>
-                    ))}
-                </ul>
             </Header_text>
             <div className='map-container'>
                 <MapContainer center={[23.2858, 77.2755]} zoom={2} scrollWheelZoom={true}>
@@ -91,21 +86,6 @@ export default function Wanderings()
                             }}>
                          </Marker>   
                         ))}
-                        {markers.map((marker, idx) => (
-                        <Marker 
-                            key={idx} 
-                            position={marker.geocode}
-                            eventHandlers={{
-                                click: () => {
-                                handleMarkerClick(marker.popup, 1);
-                                console.log("Clicked:", marker.popup);
-                                },
-                            }}>
-                            {/* <Popup>
-                                {marker.popup}
-                            </Popup> */}
-                        </Marker>
-                    ))}
                     </MarkerClusterGroup>
                     
                 </MapContainer>

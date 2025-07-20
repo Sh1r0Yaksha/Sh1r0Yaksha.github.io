@@ -1,92 +1,105 @@
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
-import { useParams, useLocation} from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 import { supabase } from "../supabaseClient";
-import type { Tables} from "../database.types.ts";
-import './TravelBlogs.css'
+import type { Tables } from "../database.types.ts";
+import './TravelBlogs.css';
 import Header_text from './Header_text';
 import Header_title from './Header_title.tsx';
 import Section from './Section.tsx';
 
-
-const LOCAL_KEY_PREFIX = "travelblog_data_";
-
-
-
 export default function TravelBlog() {
-    const {slug} = useParams();
+  const location = useLocation();
 
-    const location = useLocation();
-    const storageKey = `${LOCAL_KEY_PREFIX}${slug}`;
+  const [travelID, setTravelID] = useState<number>(0);
+  const [PlaceBlog, SetPlaceBlog] = useState<Tables<'Travel'>>();
+  const [markdown, setMarkdown] = useState<string>('');
 
-    const [travelID, setTravelID] = useState<number>(1);
-    const [PlaceBlog, SetPlaceBlog] = useState<Tables<'Travel'>>()
-    const [markdown, setMarkdown] = useState<string | null>(null);
+  // 🟢 Step 1: Set travelID from location.state ONCE
+  useEffect(() => {
+    const stateData = location.state as number | undefined;
+    if (stateData) {
+      setTravelID(stateData);
+    } else {
+      console.error("Missing route state! Expected travelID in location.state");
+    }
+  }, [location.state]);
 
-    useEffect(() => {
-        async function fetchPlaces() {
-            const { data } = await supabase
+  // 🟢 Step 2: Fetch place info when travelID is available
+  useEffect(() => {
+    if (!travelID) return;
+    if (travelID){
+        async function fetchPlace() {
+        const { data, error } = await supabase
             .from('Travel')
-            .select("*")
+            .select('*')
             .eq('id', travelID)
             .single<Tables<'Travel'>>();
-            SetPlaceBlog(data ?? undefined)
+
+        if (error) {
+            console.error("Error fetching place from Supabase:", error.message);
+        } else {
+            SetPlaceBlog(data ?? undefined);
+        }}
+        fetchPlace();
+    }
+  }, [travelID]);
+
+  // 🟢 Step 3: Load markdown after PlaceBlog is set
+  useEffect(() => {
+    if (!PlaceBlog?.id_place) return;
+
+    async function loadMarkdown() {
+        try {
+        const res = await fetch(`/data/travel/blogs/${PlaceBlog?.id_place}.md`);
+        const text = await res.text();
+
+        // 🧠 Check if we accidentally received index.html instead of the md file
+        if (
+            !res.ok ||
+            text.startsWith("<!DOCTYPE html>") ||
+            res.headers.get("content-type")?.includes("text/html")
+        ) {
+            throw new Error("Received HTML instead of markdown (probably 404)");
         }
 
-        async function loadMarkdown() {
-            if (PlaceBlog?.md_file_location) {
-                const { data, error } = await supabase
-                .storage
-                .from('travel')
-                .download(PlaceBlog.md_file_location);
-                
+        setMarkdown(text);
+        } catch (err) {
+        console.warn("Markdown not found, loading 404 fallback.");
 
-                if (error) {
-                    console.error("Error fetching .md file:", error.message);
-                    return;
-                }
-                const text = await data.text();
-                setMarkdown(text);
-
-                console.log(data.text);
-            }
+        try {
+            const fallbackRes = await fetch('/data/travel/blogs/404.md');
+            const fallbackText = await fallbackRes.text();
+            setMarkdown(fallbackText);
+        } catch (fallbackErr) {
+            console.error("Failed to load fallback 404 markdown:", fallbackErr);
+            setMarkdown("# Page Not Found\n\nThe requested blog does not exist.");
         }
-
-        const stateData = location.state as number | undefined;
-
-        if (stateData) {
-            setTravelID(stateData);
-            localStorage.setItem(storageKey, String(stateData));
-        } 
-        else {
-            const stored = localStorage.getItem(storageKey);
-            if (stored) {
-                setTravelID(Number(stored));
-            }
         }
-
-        fetchPlaces();
-
-        loadMarkdown();
-    }, [location.state, storageKey]);
-
-    if (!PlaceBlog) {
-        return <div>No travel info found for this destination.</div>;
     }
 
-    return (
-        <>
-        <Header_text>
-            <Header_title>{PlaceBlog.Place}</Header_title>
-        </Header_text>
+    loadMarkdown();
+    }, [PlaceBlog]);
 
-        <Section id='markdown-text'>
-            {markdown ? (
-                <ReactMarkdown>{markdown}</ReactMarkdown>
-            ) : (
-                <p>Loading markdown...</p>
-            )}
-        </Section>
-        </>
-    )
+
+  // Handle missing data case
+  if (!PlaceBlog) {
+    return <div>No travel info found for this destination.</div>;
+  }
+
+  return (
+    <>
+      <Header_text>
+        <Header_title>{PlaceBlog.Place}</Header_title>
+      </Header_text>
+
+      <Section id='markdown-text'>
+        {markdown ? (
+          <ReactMarkdown>{markdown}</ReactMarkdown>
+        ) : (
+          <p>Loading markdown...</p>
+        )}
+      </Section>
+    </>
+  );
 }
