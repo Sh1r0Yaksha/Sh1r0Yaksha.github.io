@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
-import { useParams, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { supabase } from "../supabaseClient";
 import type { Tables } from "../database.types.ts";
 import './TravelBlogs.css';
