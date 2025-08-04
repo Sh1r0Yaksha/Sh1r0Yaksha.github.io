@@ -9,6 +9,7 @@ import moviesJSON from '../data/trackers/movies.json'
 import { Link } from 'react-router-dom'
 import Card from '../components/Card'
 import Jumpy_Moo_img from '../assets/images/jumpy_Moo.png'
+import WFC_img from '../assets/images/WFC.png'
 import XKCD from '../components/XKCD'
 import JokesAPI from '../components/JokesAPI'
 import DadJokes from '../components/DadJokes'
@@ -57,6 +58,15 @@ export default function Random() {
                             external={false}
                             custom_class='carousel-card'>
                                 A game made using unity with custom assets for webGL.
+                        </Card>
+                        <Card
+                            href='gamedev/WFC'
+                            img_src={WFC_img}
+                            img_alt="Wave Function Collapse"
+                            display_text='Watch funny roads forming using "quantum physics"'
+                            external={false}
+                            custom_class='carousel-card'>
+                                A simulated view of the wave function collapse algorithm, with grayscale to colour effects
                         </Card>
                     </>
                 </Carousel>

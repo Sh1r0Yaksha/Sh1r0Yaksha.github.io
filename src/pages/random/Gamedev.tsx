@@ -4,6 +4,7 @@ import Header_text from "../../components/Header_text";
 import Header_title from "../../components/Header_title";
 import Section from "../../components/Section";
 import Jumpy_Moo_img from '../../assets/images/jumpy_Moo.png'
+import WFC_img from '../../assets/images/WFC.png'
 
 export default function Gamedev() {
     return(
@@ -23,6 +24,15 @@ export default function Gamedev() {
                         external={false}>
                             A game made using unity with custom assets for webGL.
                     </Card>
+                    <Card
+                            href='WFC'
+                            img_src={WFC_img}
+                            img_alt="Wave Function Collapse"
+                            display_text='Watch funny roads forming using "quantum physics"'
+                            external={false}
+                            custom_class='carousel-card'>
+                                A simulated view of the wave function collapse algorithm, with grayscale to colour effects
+                        </Card>
                 </div>
             </Section> 
         </>

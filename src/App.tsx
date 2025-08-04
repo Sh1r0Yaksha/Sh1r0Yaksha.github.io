@@ -11,8 +11,10 @@ import Games from "./pages/random/Games";
 import Anime from "./pages/random/Anime";
 import Reading from "./pages/random/Reading";
 import Jumpy_Moo from "./pages/random/gamedev/Jumpy_Moo";
+import WFC from "./pages/random/gamedev/WFC";
 import TravelBlog from "./components/TravelBlogs";
 import MovieReview from "./components/MovieReview";
+
 
 function App() {
   return (
@@ -27,6 +29,7 @@ function App() {
           <Route path="random" element={<Random />} />
           <Route path="random/gamedev" element={<Gamedev />} />
           <Route path="random/gamedev/jumpy_moo" element={<Jumpy_Moo />} />
+          <Route path="random/gamedev/WFC" element={<WFC />} />
           
           <Route path="random/movies" element={<Movies />} />
           <Route path="random/movies/:slug" element={<MovieReview />} />
