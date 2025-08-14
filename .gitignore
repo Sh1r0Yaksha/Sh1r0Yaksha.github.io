@@ -16,6 +16,7 @@ TODO.md
 .env.local
 
 # Editor directories and files
+.zed
 .vscode/*
 !.vscode/extensions.json
 .idea
