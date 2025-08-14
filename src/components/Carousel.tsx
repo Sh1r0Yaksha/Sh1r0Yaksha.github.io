@@ -1,55 +1,81 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, Children } from "react";
 import "./Carousel.css";
 
 interface CarouselProps {
   children: React.ReactNode;
 }
 
-const Carousel: React.FC<CarouselProps> = ({children }) => {
+const Carousel: React.FC<CarouselProps> = ({ children }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const [showLeftFade, setShowLeftFade] = useState(false);
   const [showRightFade, setShowRightFade] = useState(true);
 
-  const updateShadows = () => {
+  const totalPages = Children.count(children); // ✅ Always number of children
+  const [currentPage, setCurrentPage] = useState(0);
+
+  const updateShadowsAndCurrentPage = () => {
     if (!scrollRef.current) return;
     const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+
     setShowLeftFade(scrollLeft > 0);
     setShowRightFade(scrollLeft + clientWidth < scrollWidth - 1);
+
+    // ✅ Find the nearest child to center
+    const childWidth = scrollRef.current.children[0]?.clientWidth || clientWidth;
+    const centerPosition = scrollLeft + clientWidth / 2;
+    let closestIndex = 0;
+    let closestDistance = Infinity;
+
+    Array.from(scrollRef.current.children).forEach((child, index) => {
+      const el = child as HTMLElement;
+      const childCenter = el.offsetLeft + childWidth / 2;
+      const distance = Math.abs(centerPosition - childCenter);
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        closestIndex = index;
+      }
+    });
+
+    setCurrentPage(closestIndex);
   };
 
   useEffect(() => {
     const el = scrollRef.current;
     if (!el) return;
 
-    updateShadows();
-    el.addEventListener("scroll", updateShadows);
-    window.addEventListener("resize", updateShadows);
+    updateShadowsAndCurrentPage();
+    el.addEventListener("scroll", updateShadowsAndCurrentPage, { passive: true });
+    window.addEventListener("resize", updateShadowsAndCurrentPage);
 
     return () => {
-      el.removeEventListener("scroll", updateShadows);
-      window.removeEventListener("resize", updateShadows);
+      el.removeEventListener("scroll", updateShadowsAndCurrentPage);
+      window.removeEventListener("resize", updateShadowsAndCurrentPage);
     };
   }, []);
 
+  const scrollToPage = (pageIndex: number) => {
+    if (scrollRef.current) {
+      const child = scrollRef.current.children[pageIndex] as HTMLElement;
+      if (child) {
+        scrollRef.current.scrollTo({
+          left:
+            child.offsetLeft -
+            scrollRef.current.clientWidth / 2 +
+            child.clientWidth / 2,
+          behavior: "smooth",
+        });
+      }
+    }
+  };
+
   const scroll = (direction: "left" | "right") => {
-    if (scrollRef.current) {
-      const { scrollLeft, clientWidth } = scrollRef.current;
-      const scrollAmount = direction === "left" ? -clientWidth : clientWidth;
-      scrollRef.current.scrollTo({
-        left: scrollLeft + scrollAmount,
-        behavior: "smooth",
-      });
-    }
+    let targetIndex = currentPage + (direction === "left" ? -1 : 1);
+    targetIndex = Math.max(0, Math.min(totalPages - 1, targetIndex));
+    scrollToPage(targetIndex);
   };
 
-  const handleWheel = (e: React.WheelEvent) => {
-    if (scrollRef.current) {
-      e.preventDefault();
-      scrollRef.current.scrollLeft += e.deltaY;
-    }
-  };
-
+  // Touch handling remains (used for drag)
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeftStart, setScrollLeftStart] = useState(0);
@@ -68,11 +94,11 @@ const Carousel: React.FC<CarouselProps> = ({children }) => {
 
   const handleTouchEnd = () => {
     setIsDragging(false);
+    scrollToPage(currentPage); // ✅ snap to center on release
   };
 
   return (
     <div className="carousel">
-
       <div
         className={`carousel-container 
           ${showLeftFade ? "fade-left" : ""} 
@@ -85,7 +111,6 @@ const Carousel: React.FC<CarouselProps> = ({children }) => {
         <div
           className="carousel-scroll-area"
           ref={scrollRef}
-          onWheel={handleWheel}
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
@@ -96,6 +121,17 @@ const Carousel: React.FC<CarouselProps> = ({children }) => {
         <button className="scroll-button right" onClick={() => scroll("right")}>
           &#10095;
         </button>
+      </div>
+
+      {/* ✅ Pagination Dots — one per child */}
+      <div className="carousel-pagination">
+        {Array.from({ length: totalPages }).map((_, index) => (
+          <span
+            key={index}
+            className={`dot ${index === currentPage ? "active" : ""}`}
+            onClick={() => scrollToPage(index)}
+          ></span>
+        ))}
       </div>
     </div>
   );

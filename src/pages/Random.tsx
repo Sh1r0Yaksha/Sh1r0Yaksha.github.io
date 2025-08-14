@@ -1,18 +1,20 @@
-// import Card from '../components/Card'
+import { Link } from 'react-router-dom'
+
 import Header_text from '../components/Header_text'
 import Header_title from '../components/Header_title'
 import Carousel from '../components/Carousel'
 import Table from '../components/Table'
 import Section from '../components/Section'
-import './Random.css'
-import moviesJSON from '../data/trackers/movies.json'
-import { Link } from 'react-router-dom'
 import Card from '../components/Card'
 import Jumpy_Moo_img from '../assets/images/jumpy_Moo.png'
 import WFC_img from '../assets/images/WFC.png'
 import XKCD from '../components/XKCD'
 import JokesAPI from '../components/JokesAPI'
 import DadJokes from '../components/DadJokes'
+
+import moviesJSON from '../data/trackers/movies.json'
+
+import './Random.css'
 
 export default function Random() {
     return (
@@ -48,8 +50,8 @@ export default function Random() {
                         Here are a few games I made during my free time
                     </p>
                 </Header_text>
+                
                 <Carousel>
-                    <>
                         <Card
                             href='gamedev/jumpy_moo'
                             img_src={Jumpy_Moo_img}
@@ -68,7 +70,6 @@ export default function Random() {
                             custom_class='carousel-card'>
                                 A simulated view of the wave function collapse algorithm, with grayscale to colour effects
                         </Card>
-                    </>
                 </Carousel>
             </Section>
 
