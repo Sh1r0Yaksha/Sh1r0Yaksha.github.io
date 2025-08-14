@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import UnityPlayer from "../../../components/games/UnityPlayer";
+import Section from "../../../components/Section";
+import Header_text from "../../../components/Header_text";
+import Header_title from "../../../components/Header_title";
 
 export default function WFC() {
   const [dimensions, setDimensions] = useState(getDimensions());
@@ -23,7 +26,14 @@ export default function WFC() {
 
   return (
     <>
-        <UnityPlayer src="/Games/WFC/index.html" title="Wave Function Collapse" width={dimensions.width} height={dimensions.height} />
+      <Header_text>
+        <Header_title>Wave Function Collapse</Header_title>
+        A simple simulation which runs a very primitive version of the wave function collapse algorithm to generate terrain.
+      </Header_text>
+      <UnityPlayer src="/Games/WFC/index.html" title="Wave Function Collapse" width={dimensions.width} height={dimensions.height} />
+      <Section id="WFC">
+      </Section>
+        
     </>
   );
 }

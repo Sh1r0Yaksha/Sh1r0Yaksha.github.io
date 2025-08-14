@@ -65,7 +65,7 @@ export default function MovieReview() {
         console.warn("Markdown not found, loading 404 fallback.");
 
         try {
-            const fallbackRes = await fetch('/data/travel/blogs/404.md');
+            const fallbackRes = await fetch('/data/404.md');
             const fallbackText = await fallbackRes.text();
             setMarkdown(fallbackText);
         } catch (fallbackErr) {
