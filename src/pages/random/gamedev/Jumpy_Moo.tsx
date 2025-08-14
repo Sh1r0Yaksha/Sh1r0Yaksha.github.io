@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import UnityPlayer from "../../../components/games/UnityPlayer";
+import UnityPlayer from "../../../components/UnityPlayer";
 
 export default function Jumpy_Moo() {
   const [dimensions, setDimensions] = useState(getDimensions());

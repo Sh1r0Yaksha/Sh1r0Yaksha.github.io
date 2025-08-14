@@ -14,6 +14,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+
+.section img {
+  max-width: 100%;
+  height: auto;
+   display: inline-block; /* So it's centered via text-align */
+  align-items: center;
+  margin: 1rem 0;
 }
 
  @media (max-width: 768px) {
