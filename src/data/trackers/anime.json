@@ -2,26 +2,28 @@
   "type": "anime",
   "columns": [
     { "key": "name", "label": "Name", "sortable": true },
-    { "key": "status", "label": "Status", "sortable": true},
+    { "key": "status", "label": "Status", "sortable": true },
     { "key": "rating", "label": "Rating (Out of 10)", "sortable": true },
-    { "key": "episodes_watched", "label": "Number of episodes watched", "sortable": false }
+    {
+      "key": "episodes_watched",
+      "label": "Number of episodes watched",
+      "sortable": false
+    }
   ],
   "rows": [
     {
       "id": "fma_brotherhood",
-      "name": "Full Metal Alchemist Brother", 
-      "status": "Watched", 
+      "name": "Full Metal Alchemist Brother",
+      "status": "Watched",
       "rating": 9.5,
-      "episodes_watched": 64,
-      "total_epsiodes": 64
+      "episodes_watched": "64 / 64"
     },
     {
       "id": "gintama",
-      "name": "Gintama", 
-      "status": "Watched", 
+      "name": "Gintama",
+      "status": "Watched",
       "rating": 10,
-      "episodes_watched": 327,
-      "total_epsiodes": 327
+      "episodes_watched": "327 / 327"
     }
   ]
 }

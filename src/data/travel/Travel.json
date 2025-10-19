@@ -15,7 +15,7 @@
     "id_place": "ekdaar",
     "Latitude": 25.4234,
     "Longitude": 83.9228,
-    "Place": "Ekdaar"    
+    "Place": "Ekdaar"
   },
   {
     "id_place": "varanasi",
@@ -190,5 +190,11 @@
     "Latitude": 20.7002,
     "Longitude": 77.0082,
     "Place": "Akola"
+  },
+  {
+    "id_place": "madai",
+    "Latitude": 22.57652778,
+    "Longitude": 78.14383333,
+    "Place": "Satpura Tiger Reserve"
   }
 ]

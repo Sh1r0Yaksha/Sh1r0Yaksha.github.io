@@ -26,7 +26,7 @@ const MD_loader: React.FC<MD_loader_props> = ({src}) => {
                 }
     
                 setMarkdown(text);
-                } catch (err) {
+                } catch {
                 console.warn("Markdown not found, loading 404 fallback.");
     
                 try {
