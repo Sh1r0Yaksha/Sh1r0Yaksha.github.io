@@ -196,5 +196,41 @@
     "Latitude": 22.57652778,
     "Longitude": 78.14383333,
     "Place": "Satpura Tiger Reserve"
+  },
+  {
+    "id_place": "dehradun",
+    "Latitude": 30.3165,
+    "Longitude": 78.0322,
+    "Place": "Dehradun"
+  },
+  {
+    "id_place": "mussoorie",
+    "Latitude": 30.4547,
+    "Longitude": 78.0820,
+    "Place": "Mussoorie"
+  },
+  {
+    "id_place": "rishikesh",
+    "Latitude": 30.106913,
+    "Longitude": 78.287652,
+    "Place": "Rishikesh"
+  },
+  {
+    "id_place": "nainital",
+    "Latitude": 29.386168,
+    "Longitude": 79.460953,
+    "Place": "Nainital"
+  },
+  {
+    "id_place": "satttal",
+    "Latitude": 29.351013,
+    "Longitude": 79.529372,
+    "Place": "Sattal"
+  },
+  {
+    "id_place": "lisbon",
+    "Latitude": 38.7368,
+    "Longitude": -9.1387,
+    "Place": "Lisbon"
   }
 ]
