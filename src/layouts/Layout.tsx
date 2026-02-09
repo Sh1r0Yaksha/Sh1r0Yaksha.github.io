@@ -34,7 +34,7 @@ export default function Layout() {
           </div>
           <div className="contact-item">
             <a
-              href="https://www.linkedin.com/in/akshat-singh-2b0466218/"
+              href="https://www.linkedin.com/in/akshat12y/"
               target="_blank"
               rel="noopener noreferrer"
             >
