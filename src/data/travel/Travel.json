@@ -232,5 +232,13 @@
     "Latitude": 38.7368,
     "Longitude": -9.1387,
     "Place": "Lisbon"
+  },
+  {
+    "id_place": "barcelos",
+    "Latitude": 41.53876,
+    "Longitude": -8.61505,
+    "Place": "Barcelos"
   }
 ]
+
+ 
