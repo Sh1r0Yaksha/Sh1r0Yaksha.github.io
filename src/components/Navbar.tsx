@@ -6,6 +6,7 @@ import logo from '/logo.png';
 const navItems = [
   { href: '/', label: 'Home' },
   { href: '/projects', label: 'Projects' },
+  { href: '/publications', label: 'Publications' },
   { href: '/wanderings', label: 'Wanderings' },
   { href: '/random', label: 'Random' },
 ];

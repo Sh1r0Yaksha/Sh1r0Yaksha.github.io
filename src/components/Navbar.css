@@ -36,7 +36,7 @@
     margin: 0 1em 0 0;
     padding: 0;
     justify-content: flex-end;
-    gap: 2em;
+    gap: 0em;
   }
   
   .nav-links a {

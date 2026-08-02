@@ -67,21 +67,6 @@
   .footer-links a:hover {
     color: #667eea;
   }
-  
-  @media (max-width: 768px) {
-    .main-content {
-      padding: 1rem;
-    }
-    
-    .footer-content {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .text-contacts {
-      flex-direction: column;
-    }
-  }
 
   .contacts {
       display: flex;
@@ -129,4 +114,30 @@
   #github-icon {
     width: 50px;
     margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .main-content {
+      padding: 1rem;
+    }
+    
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .text-contacts {
+      flex-direction: column;
+      gap: 0.1em;
+    }
+
+    .contact-text {
+      /* border:1px solid white; */
+      font-size: 70%;
+      font-family: 'Merriweather', serif;
+      color: #b0c4e5;
+      text-decoration: none;
+      margin: 2px 2px 2px 2px;
+      width: fit-content;
+    }
   }

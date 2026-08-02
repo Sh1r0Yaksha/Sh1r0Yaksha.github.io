@@ -37,7 +37,7 @@
 
 .my-image {
     margin-top: 20px;
-    width: 20%; /* Adjust the width and height as needed */
+    width: 20%; 
     height: auto;
     border-radius: 50%;
     overflow: hidden;
@@ -47,11 +47,11 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease; 
 }
 
 .my-image:hover img {
-    transform: scale(1.2); /* Scale up the image */
+    transform: scale(1.2); 
 }
 
 .CV {
@@ -64,9 +64,9 @@
 }
 
 .CV-button {
-    display: inline-block; /* Make the anchor behave like a block element */
-    text-align: center; /* Center-align the text */
-    text-decoration: none; /* Remove the underline from the link */
+    display: inline-block; 
+    text-align: center; 
+    text-decoration: none; 
     padding-top: 10%;
     padding-bottom: 10%;
     width: 30%;
@@ -74,13 +74,13 @@
 
 .contact-icon-home {
     width: auto;
-    height: 60px; /* Keep the aspect ratio */
+    height: 60px; 
 }
 
 .cv-text {
-    display: block; /* Make it a block element */
-    margin-top: 5px; /* Space between the image and the text */
-    font-size: 14px; /* Set the font size */
+    display: block; 
+    margin-top: 5px; 
+    font-size: 14px;
     color: rgb(210, 211, 224);
 }
 
@@ -95,5 +95,9 @@
 
     .CV {
         width: 100%;
+    }
+
+    .cv-text { 
+        font-size: 70%;
     }
 }

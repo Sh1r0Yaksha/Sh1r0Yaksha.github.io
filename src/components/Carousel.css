@@ -132,6 +132,11 @@
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
+  .carousel {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
   /* Hide navigation buttons completely on mobile */
   .scroll-button,
   .carousel-container:hover .scroll-button {

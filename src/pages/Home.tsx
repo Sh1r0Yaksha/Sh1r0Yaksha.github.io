@@ -5,6 +5,7 @@ import CV from '../assets/documents/My_CV.pdf'
 import My from '../assets/images/My.webp'
 import CV_img from '../assets/images/CV.png'
 import Orcid from '../assets/images/ORCID_iD.svg'
+import Scholar from '../assets/images/scholar.png'
 
 export default function Home() {
     return (
@@ -37,6 +38,10 @@ export default function Home() {
                         <a href={CV} className="CV-button" target="_blank">
                             <img src={CV_img} alt="CURRICULUM VITAE" className="contact-icon-home" />
                             <span className="cv-text">CURRICULUM VITAE</span>
+                        </a>
+                        <a href="https://scholar.google.com/citations?hl=en&user=cLYG3IwAAAAJ" className="CV-button" target="_blank">
+                            <img src={Scholar} alt="Scholar" className="contact-icon-home" />
+                            <span className="cv-text">Scholar</span>
                         </a>
                         <a href="https://orcid.org/0009-0002-7938-7529" className="CV-button" target="_blank">
                             <img src={Orcid} alt="ORCID" className="contact-icon-home" />

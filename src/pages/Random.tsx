@@ -83,7 +83,7 @@ export default function Random() {
         </Carousel>
       </Section>
 
-      <Section id="Tracker">
+      <Section id="Movies">
         <Header_text>
           <Header_title>
             <Link to="movies"> Movies</Link>
@@ -94,6 +94,9 @@ export default function Random() {
           initialVisibleRows={3}
           href="/random/movies"
         />
+      </Section>
+
+      <Section id="Games">
         <Header_text>
           <Header_title>
             <Link to="games"> Games</Link>
@@ -104,6 +107,9 @@ export default function Random() {
           initialVisibleRows={3}
           href="/random/games"
         />
+      </Section>
+
+      <Section id="Anime">
         <Header_text>
           <Header_title>
             <Link to="anime"> Anime</Link>
@@ -114,6 +120,9 @@ export default function Random() {
           initialVisibleRows={3}
           href="/random/anime"
         />
+      </Section>
+
+      <Section id="Reading">
         <Header_text>
           <Header_title>
             <Link to="reading"> Manga, Books, LNs</Link>
@@ -122,7 +131,7 @@ export default function Random() {
         <Table
           jsonData={readingJSON}
           initialVisibleRows={3}
-          href="/random/games"
+          href="/random/reading"
         />
       </Section>
 

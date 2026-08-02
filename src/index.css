@@ -68,3 +68,19 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6em;
+    line-height: 1.5;
+  }
+
+  p {
+    font-size: 80%;
+  }
+
+  li {
+    font-size: 80%;
+  }
+
+}
