@@ -11,19 +11,2917 @@
     }
   ],
   "rows": [
-    {
-      "id": "fma_brotherhood",
-      "name": "Full Metal Alchemist Brother",
-      "status": "Watched",
-      "rating": 9.5,
-      "episodes_watched": "64 / 64"
-    },
-    {
-      "id": "gintama",
-      "name": "Gintama",
-      "status": "Watched",
-      "rating": 10,
-      "episodes_watched": "327 / 327"
-    }
+      {
+        "id": "3_gatsu_no_lion",
+        "name": "3-gatsu no Lion",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 22"
+      },
+      {
+        "id": "3_gatsu_no_lion_2nd_season",
+        "name": "3-gatsu no Lion 2nd Season",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 22"
+      },
+      {
+        "id": "5_toubun_no_hanayome",
+        "name": "5-toubun no Hanayome",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "5_toubun_no_hanayome",
+        "name": "5-toubun no Hanayome ∬",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "aharen_san_wa_hakarenai",
+        "name": "Aharen-san wa Hakarenai",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "ahiru_no_sora",
+        "name": "Ahiru no Sora",
+        "status": "Dropped",
+        "rating": 0,
+        "episodes_watched": "29 / 50"
+      },
+      {
+        "id": "aho_girl",
+        "name": "Aho Girl",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "aishiteru_game_wo_owarasetai",
+        "name": "Aishiteru Game wo Owarasetai",
+        "status": "Dropped",
+        "rating": 0,
+        "episodes_watched": "4 / 12"
+      },
+      {
+        "id": "angel_beats",
+        "name": "Angel Beats!",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "another",
+        "name": "Another",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "ansatsu_kyoushitsu",
+        "name": "Ansatsu Kyoushitsu",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "22 / 22"
+      },
+      {
+        "id": "ao_no_exorcist",
+        "name": "Ao no Exorcist",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "25 / 25"
+      },
+      {
+        "id": "appare_ranman",
+        "name": "Appare-Ranman!",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 13"
+      },
+      {
+        "id": "arifureta_shokugyou_de_sekai_saikyou",
+        "name": "Arifureta Shokugyou de Sekai Saikyou",
+        "status": "Completed",
+        "rating": 3,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "arifureta_shokugyou_de_sekai_saikyou_2nd_season",
+        "name": "Arifureta Shokugyou de Sekai Saikyou 2nd Season",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "5 / 12"
+      },
+      {
+        "id": "arifureta_shokugyou_de_sekai_saikyou_specials",
+        "name": "Arifureta Shokugyou de Sekai Saikyou Specials",
+        "status": "Completed",
+        "rating": 2,
+        "episodes_watched": "2 / 2"
+      },
+      {
+        "id": "asobi_asobase",
+        "name": "Asobi Asobase",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "asobi_asobase_specials",
+        "name": "Asobi Asobase Specials",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "2 / 2"
+      },
+      {
+        "id": "asobi_asobase_cosplay_taikai_otona_no_watashi_e",
+        "name": "Asobi Asobase: Cosplay Taikai/Otona no Watashi e",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "bakemonogatari",
+        "name": "Bakemonogatari",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "15 / 15"
+      },
+      {
+        "id": "banana_fish",
+        "name": "Banana Fish",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "6 / 24"
+      },
+      {
+        "id": "beelzebub",
+        "name": "Beelzebub",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "60 / 60"
+      },
+      {
+        "id": "black_clover",
+        "name": "Black Clover",
+        "status": "On-Hold",
+        "rating": 7,
+        "episodes_watched": "158 / 170"
+      },
+      {
+        "id": "bleach",
+        "name": "Bleach",
+        "status": "On-Hold",
+        "rating": 0,
+        "episodes_watched": "17 / 366"
+      },
+      {
+        "id": "bna",
+        "name": "BNA",
+        "status": "On-Hold",
+        "rating": 0,
+        "episodes_watched": "6 / 12"
+      },
+      {
+        "id": "bocchi_the_rock",
+        "name": "Bocchi the Rock!",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "boku_dake_ga_inai_machi",
+        "name": "Boku dake ga Inai Machi",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "boku_no_hero_academia",
+        "name": "Boku no Hero Academia",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "boku_no_hero_academia_2nd_season",
+        "name": "Boku no Hero Academia 2nd Season",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "25 / 25"
+      },
+      {
+        "id": "boku_no_hero_academia_3rd_season",
+        "name": "Boku no Hero Academia 3rd Season",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "25 / 25"
+      },
+      {
+        "id": "boku_no_hero_academia_4th_season",
+        "name": "Boku no Hero Academia 4th Season",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "25 / 25"
+      },
+      {
+        "id": "boku_no_hero_academia_5th_season",
+        "name": "Boku no Hero Academia 5th Season",
+        "status": "Dropped",
+        "rating": 0,
+        "episodes_watched": "1 / 25"
+      },
+      {
+        "id": "boku_no_hero_academia_the_movie_1_futari_no_hero",
+        "name": "Boku no Hero Academia the Movie 1: Futari no Hero",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "boku_no_hero_academia_the_movie_2_heroes_rising",
+        "name": "Boku no Hero Academia the Movie 2: Heroes:Rising",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 1"
+      },
+      {
+        "id": "bokutachi_wa_benkyou_ga_dekinai",
+        "name": "Bokutachi wa Benkyou ga Dekinai",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "bokutachi_wa_benkyou_ga_dekinai",
+        "name": "Bokutachi wa Benkyou ga Dekinai!",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "bokutachi_wa_benkyou_ga_dekinai_nagisa_ni_usemono_arite_senjin_wa_enzen_to_x_suru",
+        "name": "Bokutachi wa Benkyou ga Dekinai: Nagisa ni Usemono Arite Senjin wa Enzen to [X] Suru",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "2 / 1"
+      },
+      {
+        "id": "boruto_naruto_next_generations",
+        "name": "Boruto: Naruto Next Generations",
+        "status": "Dropped",
+        "rating": 5,
+        "episodes_watched": "137 / 293"
+      },
+      {
+        "id": "byousoku_5_centimeter",
+        "name": "Byousoku 5 Centimeter",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "3 / 3"
+      },
+      {
+        "id": "carole_tuesday",
+        "name": "Carole & Tuesday",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 24"
+      },
+      {
+        "id": "chainsaw_man",
+        "name": "Chainsaw Man",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "charlotte",
+        "name": "Charlotte",
+        "status": "Completed",
+        "rating": 4,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "choujin_koukousei_tachi_wa_isekai_demo_yoyuu_de_ikinuku_you_desu",
+        "name": "Choujin Koukousei-tachi wa Isekai demo Yoyuu de Ikinuku you desu!",
+        "status": "Completed",
+        "rating": 3,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "class_de_2_banme_ni_kawaii_onnanoko_to_tomodachi_ni_natta",
+        "name": "Class de 2-banme ni Kawaii Onnanoko to Tomodachi ni Natta",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "code_geass_hangyaku_no_lelouch",
+        "name": "Code Geass: Hangyaku no Lelouch",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "25 / 25"
+      },
+      {
+        "id": "code_geass_hangyaku_no_lelouch_r2",
+        "name": "Code Geass: Hangyaku no Lelouch R2",
+        "status": "Completed",
+        "rating": 10,
+        "episodes_watched": "25 / 25"
+      },
+      {
+        "id": "colorful_movie",
+        "name": "Colorful (Movie)",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 1"
+      },
+      {
+        "id": "cowboy_bebop",
+        "name": "Cowboy Bebop",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 26"
+      },
+      {
+        "id": "danshi_koukousei_no_nichijou",
+        "name": "Danshi Koukousei no Nichijou",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "danshi_koukousei_no_nichijou_specials",
+        "name": "Danshi Koukousei no Nichijou Specials",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "6 / 6"
+      },
+      {
+        "id": "darling_in_the_franxx",
+        "name": "Darling in the FranXX",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "24 / 24"
+      },
+      {
+        "id": "darwin_s_game",
+        "name": "Darwin's Game",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "11 / 11"
+      },
+      {
+        "id": "date_a_bullet_dead_or_bullet",
+        "name": "Date A Bullet: Dead or Bullet",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 1"
+      },
+      {
+        "id": "date_a_live",
+        "name": "Date A Live",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "date_a_live_ii",
+        "name": "Date A Live II",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "10 / 10"
+      },
+      {
+        "id": "date_a_live_iii",
+        "name": "Date A Live III",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "date_a_live_iv",
+        "name": "Date A Live IV",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "death_note",
+        "name": "Death Note",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "37 / 37"
+      },
+      {
+        "id": "death_parade",
+        "name": "Death Parade",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "devilman_crybaby",
+        "name": "Devilman: Crybaby",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 10"
+      },
+      {
+        "id": "dna",
+        "name": "DNA²",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "dna_ova",
+        "name": "DNA² OVA",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "3 / 3"
+      },
+      {
+        "id": "domestic_na_kanojo",
+        "name": "Domestic na Kanojo",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "dorohedoro",
+        "name": "Dorohedoro",
+        "status": "On-Hold",
+        "rating": 0,
+        "episodes_watched": "1 / 12"
+      },
+      {
+        "id": "dororo",
+        "name": "Dororo",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "24 / 24"
+      },
+      {
+        "id": "doukyonin_wa_hiza_tokidoki_atama_no_ue",
+        "name": "Doukyonin wa Hiza, Tokidoki, Atama no Ue.",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "dr_stone",
+        "name": "Dr. Stone",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "24 / 24"
+      },
+      {
+        "id": "dr_stone_stone_wars",
+        "name": "Dr. Stone: Stone Wars",
+        "status": "On-Hold",
+        "rating": 0,
+        "episodes_watched": "3 / 11"
+      },
+      {
+        "id": "dragon_ball",
+        "name": "Dragon Ball",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "153 / 153"
+      },
+      {
+        "id": "dragon_ball_gt",
+        "name": "Dragon Ball GT",
+        "status": "Completed",
+        "rating": 4,
+        "episodes_watched": "64 / 64"
+      },
+      {
+        "id": "dragon_ball_super",
+        "name": "Dragon Ball Super",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "131 / 131"
+      },
+      {
+        "id": "dragon_ball_super_broly",
+        "name": "Dragon Ball Super: Broly",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "dragon_ball_z",
+        "name": "Dragon Ball Z",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "291 / 291"
+      },
+      {
+        "id": "durarara",
+        "name": "Durarara!!",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "24 / 24"
+      },
+      {
+        "id": "eizouken_ni_wa_te_wo_dasu_na",
+        "name": "Eizouken ni wa Te wo Dasu na!",
+        "status": "On-Hold",
+        "rating": 0,
+        "episodes_watched": "2 / 12"
+      },
+      {
+        "id": "elfen_lied",
+        "name": "Elfen Lied",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 13"
+      },
+      {
+        "id": "enen_no_shouboutai",
+        "name": "Enen no Shouboutai",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "24 / 24"
+      },
+      {
+        "id": "enen_no_shouboutai_ni_no_shou",
+        "name": "Enen no Shouboutai: Ni no Shou",
+        "status": "On-Hold",
+        "rating": 0,
+        "episodes_watched": "2 / 24"
+      },
+      {
+        "id": "eromanga_sensei",
+        "name": "Eromanga-sensei",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "eromanga_sensei_ova",
+        "name": "Eromanga-sensei OVA",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "2 / 2"
+      },
+      {
+        "id": "fairy_gone",
+        "name": "Fairy Gone",
+        "status": "Dropped",
+        "rating": 0,
+        "episodes_watched": "1 / 12"
+      },
+      {
+        "id": "fairy_tail",
+        "name": "Fairy Tail",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "175 / 175"
+      },
+      {
+        "id": "fairy_tail_2014",
+        "name": "Fairy Tail (2014)",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "102 / 102"
+      },
+      {
+        "id": "fairy_tail_final_series",
+        "name": "Fairy Tail: Final Series",
+        "status": "Completed",
+        "rating": 4,
+        "episodes_watched": "51 / 51"
+      },
+      {
+        "id": "fantasy_bishoujo_juniku_ojisan_to",
+        "name": "Fantasy Bishoujo Juniku Ojisan to",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "fate_stay_night",
+        "name": "Fate/stay night",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "24 / 24"
+      },
+      {
+        "id": "fate_stay_night_unlimited_blade_works",
+        "name": "Fate/stay night: Unlimited Blade Works",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 12"
+      },
+      {
+        "id": "fate_zero",
+        "name": "Fate/Zero",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 13"
+      },
+      {
+        "id": "fruits_basket_1st_season",
+        "name": "Fruits Basket 1st Season",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "25 / 25"
+      },
+      {
+        "id": "fruits_basket_2nd_season",
+        "name": "Fruits Basket 2nd Season",
+        "status": "On-Hold",
+        "rating": 0,
+        "episodes_watched": "4 / 25"
+      },
+      {
+        "id": "fullmetal_alchemist_brotherhood",
+        "name": "Fullmetal Alchemist: Brotherhood",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "64 / 64"
+      },
+      {
+        "id": "fullmetal_alchemist_brotherhood_4_koma_gekijou",
+        "name": "Fullmetal Alchemist: Brotherhood - 4-koma Gekijou",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "16 / 16"
+      },
+      {
+        "id": "fumetsu_no_anata_e",
+        "name": "Fumetsu no Anata e",
+        "status": "On-Hold",
+        "rating": 0,
+        "episodes_watched": "2 / 20"
+      },
+      {
+        "id": "fuufu_ijou_koibito_miman",
+        "name": "Fuufu Ijou, Koibito Miman.",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "gabriel_dropout",
+        "name": "Gabriel DropOut",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "gabriel_dropout_specials",
+        "name": "Gabriel DropOut Specials",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 2"
+      },
+      {
+        "id": "gaikotsu_kishi_sama_tadaima_isekai_e_odekakechuu",
+        "name": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu",
+        "status": "Completed",
+        "rating": 4,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "gaikotsu_kishi_sama_tadaima_isekai_e_odekakechuu_ii",
+        "name": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu II",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 12"
+      },
+      {
+        "id": "gal_to_kyouryuu",
+        "name": "Gal to Kyouryuu",
+        "status": "Dropped",
+        "rating": 0,
+        "episodes_watched": "7 / 12"
+      },
+      {
+        "id": "gate_jieitai_kanochi_nite_kaku_tatakaeri",
+        "name": "Gate: Jieitai Kanochi nite, Kaku Tatakaeri",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "gate_jieitai_kanochi_nite_kaku_tatakaeri_part_2",
+        "name": "Gate: Jieitai Kanochi nite, Kaku Tatakaeri Part 2",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "genjitsu_shugi_yuusha_no_oukoku_saikenki_part_2",
+        "name": "Genjitsu Shugi Yuusha no Oukoku Saikenki Part 2",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "6 / 13"
+      },
+      {
+        "id": "ginga_eiyuu_densetsu",
+        "name": "Ginga Eiyuu Densetsu",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 110"
+      },
+      {
+        "id": "gintama",
+        "name": "Gintama",
+        "status": "Completed",
+        "rating": 10,
+        "episodes_watched": "201 / 201"
+      },
+      {
+        "id": "gintama_movie_1_shinyaku_benizakura_hen",
+        "name": "Gintama Movie 1: Shinyaku Benizakura-hen",
+        "status": "Completed",
+        "rating": 10,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "gintama_movie_2_kanketsu_hen_yorozuya_yo_eien_nare",
+        "name": "Gintama Movie 2: Kanketsu-hen - Yorozuya yo Eien Nare",
+        "status": "Completed",
+        "rating": 10,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "gintama",
+        "name": "Gintama'",
+        "status": "Completed",
+        "rating": 10,
+        "episodes_watched": "51 / 51"
+      },
+      {
+        "id": "gintama_enchousen",
+        "name": "Gintama': Enchousen",
+        "status": "Completed",
+        "rating": 10,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "gintama_futon_ni_haitte_kara_buki_nokoshi_ni_kizuite_neru_ni_nerenai_toki_mo_aru",
+        "name": "Gintama': Futon ni Haitte kara Buki Nokoshi ni Kizuite Neru ni Nerenai Toki mo Aru",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "gintama",
+        "name": "Gintama.",
+        "status": "Completed",
+        "rating": 10,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "gintama_porori_hen",
+        "name": "Gintama. Porori-hen",
+        "status": "Completed",
+        "rating": 10,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "gintama_shirogane_no_tamashii_hen",
+        "name": "Gintama. Shirogane no Tamashii-hen",
+        "status": "Completed",
+        "rating": 10,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "gintama_shirogane_no_tamashii_hen_kouhan_sen",
+        "name": "Gintama. Shirogane no Tamashii-hen - Kouhan-sen",
+        "status": "Completed",
+        "rating": 10,
+        "episodes_watched": "14 / 14"
+      },
+      {
+        "id": "gintama_nanigoto_mo_saisho_ga_kanjin_nanode_tashou_senobisuru_kurai_ga_choudoyoi",
+        "name": "Gintama: Nanigoto mo Saisho ga Kanjin nanode Tashou Senobisuru Kurai ga Choudoyoi",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "gintama_shiroyasha_koutan",
+        "name": "Gintama: Shiroyasha Koutan",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "gintama_the_final",
+        "name": "Gintama: The Final",
+        "status": "Completed",
+        "rating": 10,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "gintama_the_semi_final",
+        "name": "Gintama: The Semi-Final",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "2 / 2"
+      },
+      {
+        "id": "gintama",
+        "name": "Gintama°",
+        "status": "Completed",
+        "rating": 10,
+        "episodes_watched": "51 / 51"
+      },
+      {
+        "id": "gintama_aizome_kaori_hen",
+        "name": "Gintama°: Aizome Kaori-hen",
+        "status": "Completed",
+        "rating": 10,
+        "episodes_watched": "2 / 2"
+      },
+      {
+        "id": "gintama_umai_mono_wa_atomawashi_ni_suru_to_yokodorisareru_kara_yappari_saki_ni_kue",
+        "name": "Gintama°: Umai-mono wa Atomawashi ni Suru to Yokodorisareru kara Yappari Saki ni Kue",
+        "status": "Completed",
+        "rating": 10,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "given",
+        "name": "Given",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "11 / 11"
+      },
+      {
+        "id": "given_movie_1",
+        "name": "Given Movie 1",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "gleipnir",
+        "name": "Gleipnir",
+        "status": "Dropped",
+        "rating": 0,
+        "episodes_watched": "4 / 13"
+      },
+      {
+        "id": "goblin_slayer",
+        "name": "Goblin Slayer",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "gokushufudou",
+        "name": "Gokushufudou",
+        "status": "Dropped",
+        "rating": 0,
+        "episodes_watched": "1 / 5"
+      },
+      {
+        "id": "golden_time",
+        "name": "Golden Time",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "24 / 24"
+      },
+      {
+        "id": "grand_blue",
+        "name": "Grand Blue",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "grand_blue_season_3",
+        "name": "Grand Blue Season 3",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "3 / 12"
+      },
+      {
+        "id": "great_pretender",
+        "name": "Great Pretender",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "23 / 23"
+      },
+      {
+        "id": "great_teacher_onizuka",
+        "name": "Great Teacher Onizuka",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "43 / 43"
+      },
+      {
+        "id": "gyakkyou_burai_kaiji_ultimate_survivor",
+        "name": "Gyakkyou Burai Kaiji: Ultimate Survivor",
+        "status": "On-Hold",
+        "rating": 0,
+        "episodes_watched": "3 / 26"
+      },
+      {
+        "id": "hataraku_maou_sama",
+        "name": "Hataraku Maou-sama!",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "hataraku_maou_sama",
+        "name": "Hataraku Maou-sama!!",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 12"
+      },
+      {
+        "id": "hataraku_saibou",
+        "name": "Hataraku Saibou",
+        "status": "On-Hold",
+        "rating": 0,
+        "episodes_watched": "2 / 13"
+      },
+      {
+        "id": "hell_mode_yarikomizuki_no_gamer_wa_hai_settei_no_isekai_de_musou_suru_2nd_season",
+        "name": "Hell Mode: Yarikomizuki no Gamer wa Hai Settei no Isekai de Musou suru 2nd Season",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "5 / 0"
+      },
+      {
+        "id": "hellsing_ultimate",
+        "name": "Hellsing Ultimate",
+        "status": "On-Hold",
+        "rating": 0,
+        "episodes_watched": "1 / 10"
+      },
+      {
+        "id": "heroine_seijo_iie_all_works_maid_desu_hokori",
+        "name": "Heroine? Seijo? Iie, All Works Maid desu (Hokori)!",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "6 / 12"
+      },
+      {
+        "id": "hige_wo_soru_soshite_joshikousei_wo_hirou",
+        "name": "Hige wo Soru. Soshite Joshikousei wo Hirou.",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "high_school_dxd",
+        "name": "High School DxD",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "high_school_dxd_born",
+        "name": "High School DxD BorN",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "high_school_dxd_hero",
+        "name": "High School DxD Hero",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "high_school_dxd_new",
+        "name": "High School DxD New",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "0 / 12"
+      },
+      {
+        "id": "high_school_dxd_new_oppai_tsutsumimasu",
+        "name": "High School DxD New: Oppai, Tsutsumimasu!",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "high_school_dxd_ova",
+        "name": "High School DxD OVA",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "2 / 2"
+      },
+      {
+        "id": "himouto_umaru_chan",
+        "name": "Himouto! Umaru-chan",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "himouto_umaru_chan_ova",
+        "name": "Himouto! Umaru-chan OVA",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "2 / 2"
+      },
+      {
+        "id": "himouto_umaru_chan_r",
+        "name": "Himouto! Umaru-chan R",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "himouto_umaru_chans",
+        "name": "Himouto! Umaru-chanS",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "hitoribocchi_no_marumaru_seikatsu",
+        "name": "Hitoribocchi no Marumaru Seikatsu",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "honzuki_no_gekokujou_shisho_ni_naru_tame_ni_wa_shudan_wo_erandeiraremasen",
+        "name": "Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "14 / 14"
+      },
+      {
+        "id": "honzuki_no_gekokujou_shisho_ni_naru_tame_ni_wa_shudan_wo_erandeiraremasen_ryoushu_no_youjo",
+        "name": "Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen - Ryoushu no Youjo",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "15 / 24"
+      },
+      {
+        "id": "honzuki_no_gekokujou_shisho_ni_naru_tame_ni_wa_shudan_wo_erandeiraremasen_2nd_season",
+        "name": "Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen 2nd Season",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "honzuki_no_gekokujou_shisho_ni_naru_tame_ni_wa_shudan_wo_erandeiraremasen_3rd_season",
+        "name": "Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen 3rd Season",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "8 / 10"
+      },
+      {
+        "id": "horimiya",
+        "name": "Horimiya",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "hoshi_wo_ou_kodomo",
+        "name": "Hoshi wo Ou Kodomo",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 1"
+      },
+      {
+        "id": "hotaru_no_haka",
+        "name": "Hotaru no Haka",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "houseki_no_kuni",
+        "name": "Houseki no Kuni",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 12"
+      },
+      {
+        "id": "hunter_x_hunter_2011",
+        "name": "Hunter x Hunter (2011)",
+        "status": "On-Hold",
+        "rating": 0,
+        "episodes_watched": "53 / 148"
+      },
+      {
+        "id": "id_invaded",
+        "name": "Id:Invaded",
+        "status": "On-Hold",
+        "rating": 0,
+        "episodes_watched": "0 / 13"
+      },
+      {
+        "id": "ijiranaide_nagatoro_san",
+        "name": "Ijiranaide, Nagatoro-san",
+        "status": "Dropped",
+        "rating": 0,
+        "episodes_watched": "3 / 12"
+      },
+      {
+        "id": "inazuma_eleven",
+        "name": "Inazuma Eleven",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "0 / 127"
+      },
+      {
+        "id": "initial_d_first_stage",
+        "name": "Initial D First Stage",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "26 / 26"
+      },
+      {
+        "id": "inuyashiki",
+        "name": "Inuyashiki",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 11"
+      },
+      {
+        "id": "isekai_cheat_magician",
+        "name": "Isekai Cheat Magician",
+        "status": "Dropped",
+        "rating": 3,
+        "episodes_watched": "5 / 12"
+      },
+      {
+        "id": "isekai_meikyuu_de_harem_wo",
+        "name": "Isekai Meikyuu de Harem wo",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "isekai_nonbiri_nouka_2",
+        "name": "Isekai Nonbiri Nouka 2",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "isekai_ojisan",
+        "name": "Isekai Ojisan",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "11 / 13"
+      },
+      {
+        "id": "isekai_quartet",
+        "name": "Isekai Quartet",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "isekai_quartet_2",
+        "name": "Isekai Quartet 2",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "isekai_wa_smartphone_to_tomo_ni",
+        "name": "Isekai wa Smartphone to Tomo ni.",
+        "status": "Completed",
+        "rating": 1,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "ishuzoku_reviewers",
+        "name": "Ishuzoku Reviewers",
+        "status": "Completed",
+        "rating": 10,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "itai_no_wa_iya_nanode_bougyoryoku_ni_kyokufuri_shitai_to_omoimasu",
+        "name": "Itai no wa Iya nanode Bougyoryoku ni Kyokufuri Shitai to Omoimasu.",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "jojo_no_kimyou_na_bouken_tv",
+        "name": "JoJo no Kimyou na Bouken (TV)",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "26 / 26"
+      },
+      {
+        "id": "jojo_no_kimyou_na_bouken_part_3_stardust_crusaders",
+        "name": "JoJo no Kimyou na Bouken Part 3: Stardust Crusaders",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "24 / 24"
+      },
+      {
+        "id": "jojo_no_kimyou_na_bouken_part_3_stardust_crusaders_egypt_hen",
+        "name": "JoJo no Kimyou na Bouken Part 3: Stardust Crusaders - Egypt-hen",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "24 / 24"
+      },
+      {
+        "id": "jojo_no_kimyou_na_bouken_part_4_diamond_wa_kudakenai",
+        "name": "JoJo no Kimyou na Bouken Part 4: Diamond wa Kudakenai",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "39 / 39"
+      },
+      {
+        "id": "jojo_no_kimyou_na_bouken_part_5_ougon_no_kaze",
+        "name": "JoJo no Kimyou na Bouken Part 5: Ougon no Kaze",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "39 / 39"
+      },
+      {
+        "id": "josee_to_tora_to_sakana_tachi",
+        "name": "Josee to Tora to Sakana-tachi",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 1"
+      },
+      {
+        "id": "jujutsu_kaisen",
+        "name": "Jujutsu Kaisen",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "24 / 24"
+      },
+      {
+        "id": "k_on",
+        "name": "K-On!",
+        "status": "On-Hold",
+        "rating": 0,
+        "episodes_watched": "4 / 13"
+      },
+      {
+        "id": "kabukichou_sherlock",
+        "name": "Kabukichou Sherlock",
+        "status": "On-Hold",
+        "rating": 6,
+        "episodes_watched": "19 / 24"
+      },
+      {
+        "id": "kage_no_jitsuryokusha_ni_naritakute",
+        "name": "Kage no Jitsuryokusha ni Naritakute!",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "14 / 20"
+      },
+      {
+        "id": "kaguya_sama_wa_kokurasetai_tensai_tachi_no_renai_zunousen",
+        "name": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "kaguya_sama_wa_kokurasetai_ultra_romantic",
+        "name": "Kaguya-sama wa Kokurasetai: Ultra Romantic",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "kaguya_sama_wa_kokurasetai_tensai_tachi_no_renai_zunousen",
+        "name": "Kaguya-sama wa Kokurasetai? Tensai-tachi no Renai Zunousen",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "kaichou_wa_maid_sama",
+        "name": "Kaichou wa Maid-sama!",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "26 / 26"
+      },
+      {
+        "id": "kaifuku_jutsushi_no_yarinaoshi",
+        "name": "Kaifuku Jutsushi no Yarinaoshi",
+        "status": "Completed",
+        "rating": 2,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "kakushigoto",
+        "name": "Kakushigoto",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "kami_no_tou",
+        "name": "Kami no Tou",
+        "status": "Dropped",
+        "rating": 0,
+        "episodes_watched": "6 / 13"
+      },
+      {
+        "id": "kanojo_okarishimasu",
+        "name": "Kanojo, Okarishimasu",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "kekkai_sensen",
+        "name": "Kekkai Sensen",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 12"
+      },
+      {
+        "id": "kenja_no_mago",
+        "name": "Kenja no Mago",
+        "status": "Completed",
+        "rating": 4,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "kidou_senshi_gundam_suisei_no_majo",
+        "name": "Kidou Senshi Gundam: Suisei no Majo",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "kill_la_kill",
+        "name": "Kill la Kill",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "24 / 24"
+      },
+      {
+        "id": "kimetsu_no_yaiba",
+        "name": "Kimetsu no Yaiba",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "26 / 26"
+      },
+      {
+        "id": "kimetsu_no_yaiba_movie_mugen_ressha_hen",
+        "name": "Kimetsu no Yaiba Movie: Mugen Ressha-hen",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 1"
+      },
+      {
+        "id": "kimi_ni_todoke_2nd_season",
+        "name": "Kimi ni Todoke 2nd Season",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 12"
+      },
+      {
+        "id": "kimi_no_koe_wo_todoketai",
+        "name": "Kimi no Koe wo Todoketai",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "kimi_no_na_wa",
+        "name": "Kimi no Na wa.",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "kimi_no_suizou_wo_tabetai",
+        "name": "Kimi no Suizou wo Tabetai",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "kiseijuu_sei_no_kakuritsu",
+        "name": "Kiseijuu: Sei no Kakuritsu",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "24 / 24"
+      },
+      {
+        "id": "kishibe_rohan_wa_ugokanai",
+        "name": "Kishibe Rohan wa Ugokanai",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "3 / 4"
+      },
+      {
+        "id": "kishuku_gakkou_no_juliet",
+        "name": "Kishuku Gakkou no Juliet",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "kiss_x_sis",
+        "name": "Kiss x Sis",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "kizumonogatari_i_tekketsu_hen",
+        "name": "Kizumonogatari I: Tekketsu-hen",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "kizumonogatari_ii_nekketsu_hen",
+        "name": "Kizumonogatari II: Nekketsu-hen",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "kizumonogatari_iii_reiketsu_hen",
+        "name": "Kizumonogatari III: Reiketsu-hen",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "kobayashi_san_chi_no_maid_dragon",
+        "name": "Kobayashi-san Chi no Maid Dragon",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "kobayashi_san_chi_no_maid_dragon_s",
+        "name": "Kobayashi-san Chi no Maid Dragon S",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "koe_no_katachi",
+        "name": "Koe no Katachi",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "koko_wa_ore_ni_makasete_saki_ni_ike_to_itte_kara_10_nen_ga_tattara_densetsu_ni_natteita",
+        "name": "Koko wa Ore ni Makasete Saki ni Ike to Itte kara 10-nen ga Tattara Densetsu ni Natteita.",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "4 / 12"
+      },
+      {
+        "id": "komi_san_wa_comyushou_desu",
+        "name": "Komi-san wa, Comyushou desu.",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "2 / 12"
+      },
+      {
+        "id": "kono_subarashii_sekai_ni_shukufuku_wo",
+        "name": "Kono Subarashii Sekai ni Shukufuku wo!",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "10 / 10"
+      },
+      {
+        "id": "kono_subarashii_sekai_ni_shukufuku_wo_2",
+        "name": "Kono Subarashii Sekai ni Shukufuku wo! 2",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "10 / 10"
+      },
+      {
+        "id": "kono_subarashii_sekai_ni_shukufuku_wo_movie_kurenai_densetsu",
+        "name": "Kono Subarashii Sekai ni Shukufuku wo! Movie: Kurenai Densetsu",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "koori_no_jouheki",
+        "name": "Koori no Jouheki",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "14 / 14"
+      },
+      {
+        "id": "kuzu_no_honkai",
+        "name": "Kuzu no Honkai",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "kyokou_suiri",
+        "name": "Kyokou Suiri",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "log_horizon",
+        "name": "Log Horizon",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "25 / 25"
+      },
+      {
+        "id": "log_horizon_2nd_season",
+        "name": "Log Horizon 2nd Season",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "25 / 25"
+      },
+      {
+        "id": "log_horizon_entaku_houkai",
+        "name": "Log Horizon: Entaku Houkai",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "love_live_school_idol_project",
+        "name": "Love Live! School Idol Project",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "lv999_no_murabito",
+        "name": "Lv999 no Murabito",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "5 / 12"
+      },
+      {
+        "id": "lycoris_recoil",
+        "name": "Lycoris Recoil",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "mahou_shoujo_madoka_magica",
+        "name": "Mahou Shoujo Madoka★Magica",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "1 / 12"
+      },
+      {
+        "id": "mairimashita_iruma_kun",
+        "name": "Mairimashita! Iruma-kun",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "23 / 23"
+      },
+      {
+        "id": "mairimashita_iruma_kun_2nd_season",
+        "name": "Mairimashita! Iruma-kun 2nd Season",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 21"
+      },
+      {
+        "id": "mamahaha_no_tsurego_ga_motokano_datta",
+        "name": "Mamahaha no Tsurego ga Motokano datta",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "10 / 12"
+      },
+      {
+        "id": "maou_gakuin_no_futekigousha_shijou_saikyou_no_maou_no_shiso_tensei_shite_shison_tachi_no_gakkou_e_kayou",
+        "name": "Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e Kayou",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "maou_sama_retry",
+        "name": "Maou-sama, Retry!",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "megalo_box",
+        "name": "Megalo Box",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 13"
+      },
+      {
+        "id": "megami_isekai_tensei_nani_ni_naritai_desu_ka_ore_yuusha_no_rokkotsu_de",
+        "name": "Megami \"Isekai Tensei Nani ni Naritai desu ka\" Ore \"Yuusha no Rokkotsu de\"",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "7 / 12"
+      },
+      {
+        "id": "merc_storia_mukiryoku_no_shounen_to_bin_no_naka_no_shoujo",
+        "name": "Merc Storia: Mukiryoku no Shounen to Bin no Naka no Shoujo",
+        "status": "Dropped",
+        "rating": 0,
+        "episodes_watched": "3 / 12"
+      },
+      {
+        "id": "midara_na_ao_chan_wa_benkyou_ga_dekinai",
+        "name": "Midara na Ao-chan wa Benkyou ga Dekinai",
+        "status": "Dropped",
+        "rating": 0,
+        "episodes_watched": "3 / 12"
+      },
+      {
+        "id": "mimi_wo_sumaseba",
+        "name": "Mimi wo Sumaseba",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "mob_psycho_100",
+        "name": "Mob Psycho 100",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "mob_psycho_100_ii",
+        "name": "Mob Psycho 100 II",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "mob_psycho_100_dai_ikkai_rei_toka_soudansho_ian_ryokou_kokoro_mitasu_iyashi_no_tabi",
+        "name": "Mob Psycho 100: Dai Ikkai Rei toka Soudansho Ian Ryokou - Kokoro Mitasu Iyashi no Tabi",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "mob_psycho_100_reigen_shirarezaru_kiseki_no_reinouryokusha",
+        "name": "Mob Psycho 100: Reigen - Shirarezaru Kiseki no Reinouryokusha",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 1"
+      },
+      {
+        "id": "monogatari_series_second_season",
+        "name": "Monogatari Series: Second Season",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "26 / 26"
+      },
+      {
+        "id": "monster",
+        "name": "Monster",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "4 / 74"
+      },
+      {
+        "id": "mugen_no_juunin_immortal",
+        "name": "Mugen no Juunin: Immortal",
+        "status": "On-Hold",
+        "rating": 0,
+        "episodes_watched": "8 / 24"
+      },
+      {
+        "id": "mujikaku_seijo_wa_kyou_mo_muishiki_ni_chikara_wo_tare_nagasu",
+        "name": "Mujikaku Seijo wa Kyou mo Muishiki ni Chikara wo Tare Nagasu",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "4 / 0"
+      },
+      {
+        "id": "mushikaburi_hime",
+        "name": "Mushikaburi-hime",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "6 / 12"
+      },
+      {
+        "id": "mushoku_tensei_ii_isekai_ittara_honki_dasu",
+        "name": "Mushoku Tensei II: Isekai Ittara Honki Dasu",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "mushoku_tensei_iii_isekai_ittara_honki_dasu",
+        "name": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "5 / 14"
+      },
+      {
+        "id": "mushoku_tensei_isekai_ittara_honki_dasu",
+        "name": "Mushoku Tensei: Isekai Ittara Honki Dasu",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "11 / 11"
+      },
+      {
+        "id": "nanatsu_no_taizai",
+        "name": "Nanatsu no Taizai",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "24 / 24"
+      },
+      {
+        "id": "nanatsu_no_taizai_ova",
+        "name": "Nanatsu no Taizai OVA",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "2 / 2"
+      },
+      {
+        "id": "nanatsu_no_taizai_imashime_no_fukkatsu",
+        "name": "Nanatsu no Taizai: Imashime no Fukkatsu",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "24 / 24"
+      },
+      {
+        "id": "nanatsu_no_taizai_kamigami_no_gekirin",
+        "name": "Nanatsu no Taizai: Kamigami no Gekirin",
+        "status": "Dropped",
+        "rating": 0,
+        "episodes_watched": "14 / 24"
+      },
+      {
+        "id": "nande_koko_ni_sensei_ga",
+        "name": "Nande Koko ni Sensei ga!?",
+        "status": "Completed",
+        "rating": 4,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "nande_koko_ni_sensei_ga_nande_koko_ni_sensei_tachi_ga",
+        "name": "Nande Koko ni Sensei ga!? Nande Koko ni Sensei-tachi ga!?",
+        "status": "Completed",
+        "rating": 4,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "naruto",
+        "name": "Naruto",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "220 / 220"
+      },
+      {
+        "id": "naruto_shippuuden",
+        "name": "Naruto: Shippuuden",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "500 / 500"
+      },
+      {
+        "id": "naruto_shippuuden_movie_6_road_to_ninja",
+        "name": "Naruto: Shippuuden Movie 6 - Road to Ninja",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "neko_to_ryuu",
+        "name": "Neko to Ryuu",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "6 / 0"
+      },
+      {
+        "id": "nekomonogatari_kuro",
+        "name": "Nekomonogatari: Kuro",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "4 / 4"
+      },
+      {
+        "id": "nekopara",
+        "name": "Nekopara",
+        "status": "Dropped",
+        "rating": 4,
+        "episodes_watched": "3 / 12"
+      },
+      {
+        "id": "netoge_no_yome_wa_onnanoko_ja_nai_to_omotta",
+        "name": "Netoge no Yome wa Onnanoko ja Nai to Omotta?",
+        "status": "Completed",
+        "rating": 3,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "nhk_ni_youkoso",
+        "name": "NHK ni Youkoso!",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 24"
+      },
+      {
+        "id": "nichijou",
+        "name": "Nichijou",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "26 / 26"
+      },
+      {
+        "id": "nijiiro_days",
+        "name": "Nijiiro Days",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 24"
+      },
+      {
+        "id": "nisemonogatari",
+        "name": "Nisemonogatari",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "11 / 11"
+      },
+      {
+        "id": "no_game_no_life",
+        "name": "No Game No Life",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "no_game_no_life_specials",
+        "name": "No Game No Life Specials",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "6 / 6"
+      },
+      {
+        "id": "no_game_no_life_zero",
+        "name": "No Game No Life: Zero",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "no_game_no_life_zero_manner_movie",
+        "name": "No Game No Life: Zero - Manner Movie",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "noragami",
+        "name": "Noragami",
+        "status": "On-Hold",
+        "rating": 0,
+        "episodes_watched": "1 / 12"
+      },
+      {
+        "id": "nozoki_ana",
+        "name": "Nozoki Ana",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "odd_taxi",
+        "name": "Odd Taxi",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "one_punch_man",
+        "name": "One Punch Man",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "one_punch_man_2nd_season",
+        "name": "One Punch Man 2nd Season",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "one_punch_man_2nd_season_commemorative_special",
+        "name": "One Punch Man 2nd Season Commemorative Special",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "one_punch_man_2nd_season_specials",
+        "name": "One Punch Man 2nd Season Specials",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 6"
+      },
+      {
+        "id": "oniichan_dakedo_ai_sae_areba_kankeinai_yo_ne",
+        "name": "Oniichan dakedo Ai sae Areba Kankeinai yo ne!",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "4 / 12"
+      },
+      {
+        "id": "ookami_to_koushinryou",
+        "name": "Ookami to Koushinryou",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "ore_no_imouto_ga_konnani_kawaii_wake_ga_nai",
+        "name": "Ore no Imouto ga Konnani Kawaii Wake ga Nai",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "ore_no_imouto_ga_konnani_kawaii_wake_ga_nai_specials",
+        "name": "Ore no Imouto ga Konnani Kawaii Wake ga Nai Specials",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "4 / 4"
+      },
+      {
+        "id": "ore_no_imouto_ga_konnani_kawaii_wake_ga_nai",
+        "name": "Ore no Imouto ga Konnani Kawaii Wake ga Nai.",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "2 / 13"
+      },
+      {
+        "id": "ore_no_kanojo_to_osananajimi_ga_shuraba_sugiru",
+        "name": "Ore no Kanojo to Osananajimi ga Shuraba Sugiru",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "ore_wo_suki_nano_wa_omae_dake_ka_yo",
+        "name": "Ore wo Suki nano wa Omae dake ka yo",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "ore_wo_suki_nano_wa_omae_dake_ka_yo_ore_wa_teinei_ni_susumeru",
+        "name": "Ore wo Suki nano wa Omae dake ka yo: Ore wa Teinei ni Susumeru",
+        "status": "Completed",
+        "rating": 3,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "ore_wo_suki_nano_wa_omae_dake_ka_yo_oretachi_no_game_set",
+        "name": "Ore wo Suki nano wa Omae dake ka yo: Oretachi no Game Set",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 1"
+      },
+      {
+        "id": "otaku_ni_yasashii_gal_wa_inai",
+        "name": "Otaku ni Yasashii Gal wa Inai!?",
+        "status": "Dropped",
+        "rating": 0,
+        "episodes_watched": "5 / 12"
+      },
+      {
+        "id": "otome_game_no_hametsu_flag_shika_nai_akuyaku_reijou_ni_tensei_shiteshimatta",
+        "name": "Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta...",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "otome_game_no_hametsu_flag_shika_nai_akuyaku_reijou_ni_tensei_shiteshimatta_x",
+        "name": "Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta... X",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "overlord",
+        "name": "Overlord",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "overlord_ii",
+        "name": "Overlord II",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "overlord_iii",
+        "name": "Overlord III",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "overlord_iv",
+        "name": "Overlord IV",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "overlord_ple_ple_pleiades_4",
+        "name": "Overlord: Ple Ple Pleiades 4",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "1 / 13"
+      },
+      {
+        "id": "paripi_koumei",
+        "name": "Paripi Koumei",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "perfect_blue",
+        "name": "Perfect Blue",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "persona_4_the_animation",
+        "name": "Persona 4 the Animation",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "25 / 25"
+      },
+      {
+        "id": "persona_4_the_animation_no_one_is_alone",
+        "name": "Persona 4 the Animation: No One is Alone",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "peter_grill_to_kenja_no_jikan",
+        "name": "Peter Grill to Kenja no Jikan",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "1 / 12"
+      },
+      {
+        "id": "platinum_end",
+        "name": "Platinum End",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "1 / 24"
+      },
+      {
+        "id": "plunderer",
+        "name": "Plunderer",
+        "status": "Dropped",
+        "rating": 0,
+        "episodes_watched": "2 / 24"
+      },
+      {
+        "id": "princess_connect_re_dive",
+        "name": "Princess Connect! Re:Dive",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "7 / 13"
+      },
+      {
+        "id": "prison_school",
+        "name": "Prison School",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "prison_school_mad_wax",
+        "name": "Prison School: Mad Wax",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "rakudai_kenja_no_gakuin_musou_nidome_no_tensei_s_rank_cheat_majutsushi_boukenroku",
+        "name": "Rakudai Kenja no Gakuin Musou: Nidome no Tensei, S-Rank Cheat Majutsushi Boukenroku",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "6 / 0"
+      },
+      {
+        "id": "rakudai_kishi_no_cavalry",
+        "name": "Rakudai Kishi no Cavalry",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "re_zero_kara_hajimeru_break_time",
+        "name": "Re:Zero kara Hajimeru Break Time",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "11 / 11"
+      },
+      {
+        "id": "re_zero_kara_hajimeru_isekai_seikatsu",
+        "name": "Re:Zero kara Hajimeru Isekai Seikatsu",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "25 / 25"
+      },
+      {
+        "id": "re_zero_kara_hajimeru_isekai_seikatsu_hyouketsu_no_kizuna",
+        "name": "Re:Zero kara Hajimeru Isekai Seikatsu - Hyouketsu no Kizuna",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "re_zero_kara_hajimeru_isekai_seikatsu_memory_snow",
+        "name": "Re:Zero kara Hajimeru Isekai Seikatsu - Memory Snow",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "re_zero_kara_hajimeru_isekai_seikatsu_2nd_season",
+        "name": "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "re_zero_kara_hajimeru_isekai_seikatsu_2nd_season_part_2",
+        "name": "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season Part 2",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "re_zero_kara_hajimeru_isekai_seikatsu_4th_season",
+        "name": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "10 / 19"
+      },
+      {
+        "id": "relife",
+        "name": "ReLIFE",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "relife_kanketsu_hen",
+        "name": "ReLIFE: Kanketsu-hen",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "4 / 4"
+      },
+      {
+        "id": "relife_kanketsu_hen_specials",
+        "name": "ReLIFE: Kanketsu-hen Specials",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "2 / 2"
+      },
+      {
+        "id": "rikei_ga_koi_ni_ochita_no_de_shoumei_shitemita",
+        "name": "Rikei ga Koi ni Ochita no de Shoumei shitemita.",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "runway_de_waratte",
+        "name": "Runway de Waratte",
+        "status": "On-Hold",
+        "rating": 0,
+        "episodes_watched": "0 / 12"
+      },
+      {
+        "id": "saiki_kusuo_no_nan",
+        "name": "Saiki Kusuo no Ψ-nan",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "120 / 120"
+      },
+      {
+        "id": "saiki_kusuo_no_nan_2",
+        "name": "Saiki Kusuo no Ψ-nan 2",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "24 / 24"
+      },
+      {
+        "id": "saikyou_no_shokugyou_wa_yuusha_demo_kenja_demo_naku_kanteishi_kari_rashii_desu_yo",
+        "name": "Saikyou no Shokugyou wa Yuusha demo Kenja demo Naku Kanteishi (Kari) Rashii desu yo?",
+        "status": "Dropped",
+        "rating": 0,
+        "episodes_watched": "8 / 12"
+      },
+      {
+        "id": "sakamoto_desu_ga",
+        "name": "Sakamoto desu ga?",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "sakamoto_desu_ga_sakamoto_deshita",
+        "name": "Sakamoto desu ga? Sakamoto deshita?",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 1"
+      },
+      {
+        "id": "sakura_sou_no_pet_na_kanojo",
+        "name": "Sakura-sou no Pet na Kanojo",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "24 / 24"
+      },
+      {
+        "id": "seihantai_na_kimi_to_boku_2nd_season",
+        "name": "Seihantai na Kimi to Boku 2nd Season",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "4 / 13"
+      },
+      {
+        "id": "seishun_buta_yarou_wa_bunny_girl_senpai_no_yume_wo_minai",
+        "name": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "seishun_buta_yarou_wa_yumemiru_shoujo_no_yume_wo_minai",
+        "name": "Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "seitokai_no_ichizon",
+        "name": "Seitokai no Ichizon",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "seitokai_no_ichizon_lv_2",
+        "name": "Seitokai no Ichizon Lv.2",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "10 / 10"
+      },
+      {
+        "id": "seitokai_no_ichizon_lv_2_watasu_seitokai",
+        "name": "Seitokai no Ichizon Lv.2: Watasu Seitokai",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "sewayaki_kitsune_no_senko_san",
+        "name": "Sewayaki Kitsune no Senko-san",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "shigatsu_wa_kimi_no_uso",
+        "name": "Shigatsu wa Kimi no Uso",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "22 / 22"
+      },
+      {
+        "id": "shigatsu_wa_kimi_no_uso_moments",
+        "name": "Shigatsu wa Kimi no Uso: Moments",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "shinchou_yuusha_kono_yuusha_ga_ore_tueee_kuse_ni_shinchou_sugiru",
+        "name": "Shinchou Yuusha: Kono Yuusha ga Ore Tueee Kuse ni Shinchou Sugiru",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "shingeki_no_kyojin",
+        "name": "Shingeki no Kyojin",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "25 / 25"
+      },
+      {
+        "id": "shingeki_no_kyojin_season_2",
+        "name": "Shingeki no Kyojin Season 2",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "shingeki_no_kyojin_season_3",
+        "name": "Shingeki no Kyojin Season 3",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "shingeki_no_kyojin_season_3_part_2",
+        "name": "Shingeki no Kyojin Season 3 Part 2",
+        "status": "Completed",
+        "rating": 10,
+        "episodes_watched": "10 / 10"
+      },
+      {
+        "id": "shingeki_no_kyojin_the_final_season",
+        "name": "Shingeki no Kyojin: The Final Season",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "16 / 16"
+      },
+      {
+        "id": "shingeki_no_kyojin_the_final_season_kanketsu_hen",
+        "name": "Shingeki no Kyojin: The Final Season - Kanketsu-hen",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "2 / 2"
+      },
+      {
+        "id": "shinseiki_evangelion",
+        "name": "Shinseiki Evangelion",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "26 / 26"
+      },
+      {
+        "id": "shuumatsu_no_harem",
+        "name": "Shuumatsu no Harem",
+        "status": "Completed",
+        "rating": 3,
+        "episodes_watched": "11 / 11"
+      },
+      {
+        "id": "sket_dance",
+        "name": "SKET Dance",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "2 / 77"
+      },
+      {
+        "id": "snowball_earth",
+        "name": "Snowball Earth",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "somali_to_mori_no_kamisama",
+        "name": "Somali to Mori no Kamisama",
+        "status": "Dropped",
+        "rating": 0,
+        "episodes_watched": "1 / 12"
+      },
+      {
+        "id": "sono_bisque_doll_wa_koi_wo_suru",
+        "name": "Sono Bisque Doll wa Koi wo Suru",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "sousou_no_frieren",
+        "name": "Sousou no Frieren",
+        "status": "Completed",
+        "rating": 10,
+        "episodes_watched": "28 / 28"
+      },
+      {
+        "id": "spy_x_family",
+        "name": "Spy x Family",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "spy_x_family_season_2",
+        "name": "Spy x Family Season 2",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "6 / 12"
+      },
+      {
+        "id": "steins_gate",
+        "name": "Steins;Gate",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "24 / 24"
+      },
+      {
+        "id": "steins_gate_0",
+        "name": "Steins;Gate 0",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 23"
+      },
+      {
+        "id": "super_no_ura_de_yani_suu_futari",
+        "name": "Super no Ura de Yani Suu Futari",
+        "status": "Watching",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "suterare_seijo_no_isekai_gohan_tabi_kakure_skill_de_camping_car_wo_shoukan_shimashita",
+        "name": "Suterare Seijo no Isekai Gohan Tabi: Kakure Skill de Camping Car wo Shoukan shimashita",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "4 / 12"
+      },
+      {
+        "id": "suzumiya_haruhi_no_shoushitsu",
+        "name": "Suzumiya Haruhi no Shoushitsu",
+        "status": "Completed",
+        "rating": 9,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "suzumiya_haruhi_no_yuuutsu",
+        "name": "Suzumiya Haruhi no Yuuutsu",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "14 / 14"
+      },
+      {
+        "id": "suzumiya_haruhi_no_yuuutsu_2009",
+        "name": "Suzumiya Haruhi no Yuuutsu (2009)",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "14 / 14"
+      },
+      {
+        "id": "sword_art_online",
+        "name": "Sword Art Online",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "25 / 25"
+      },
+      {
+        "id": "sword_art_online_alternative_gun_gale_online",
+        "name": "Sword Art Online Alternative: Gun Gale Online",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 12"
+      },
+      {
+        "id": "sword_art_online_ii",
+        "name": "Sword Art Online II",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "24 / 24"
+      },
+      {
+        "id": "sword_art_online_movie_ordinal_scale",
+        "name": "Sword Art Online Movie: Ordinal Scale",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "sword_art_online_alicization",
+        "name": "Sword Art Online: Alicization",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "24 / 24"
+      },
+      {
+        "id": "sword_art_online_alicization_recollection",
+        "name": "Sword Art Online: Alicization - Recollection",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "sword_art_online_alicization_war_of_underworld",
+        "name": "Sword Art Online: Alicization - War of Underworld",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "sword_art_online_alicization_war_of_underworld_2nd_season",
+        "name": "Sword Art Online: Alicization - War of Underworld 2nd Season",
+        "status": "Completed",
+        "rating": 4,
+        "episodes_watched": "11 / 11"
+      },
+      {
+        "id": "tate_no_yuusha_no_nariagari",
+        "name": "Tate no Yuusha no Nariagari",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "25 / 25"
+      },
+      {
+        "id": "tate_no_yuusha_no_nariagari_season_2",
+        "name": "Tate no Yuusha no Nariagari Season 2",
+        "status": "Dropped",
+        "rating": 0,
+        "episodes_watched": "3 / 13"
+      },
+      {
+        "id": "tate_no_yuusha_no_nariagari_season_3",
+        "name": "Tate no Yuusha no Nariagari Season 3",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 12"
+      },
+      {
+        "id": "tejina_senpai",
+        "name": "Tejina-senpai",
+        "status": "Dropped",
+        "rating": 0,
+        "episodes_watched": "2 / 12"
+      },
+      {
+        "id": "tenki_no_ko",
+        "name": "Tenki no Ko",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "tenkou_saki_no_seiso_karen_na_bishoujo_ga_mukashi_danshi_to_omotte_issho_ni_asonda_osananajimi_datta_ken",
+        "name": "Tenkou-saki no Seiso Karen na Bishoujo ga, Mukashi Danshi to Omotte Issho ni Asonda Osananajimi Datta Ken",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "4 / 12"
+      },
+      {
+        "id": "tenkuu_no_shiro_laputa",
+        "name": "Tenkuu no Shiro Laputa",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 1"
+      },
+      {
+        "id": "tenmaku_no_jaadugar",
+        "name": "Tenmaku no Jaadugar",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "5 / 0"
+      },
+      {
+        "id": "tensei_shitara_slime_datta_ken",
+        "name": "Tensei shitara Slime Datta Ken",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "24 / 24"
+      },
+      {
+        "id": "tensei_shitara_slime_datta_ken_2nd_season",
+        "name": "Tensei shitara Slime Datta Ken 2nd Season",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "tensei_shitara_slime_datta_ken_4th_season",
+        "name": "Tensei shitara Slime Datta Ken 4th Season",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "15 / 24"
+      },
+      {
+        "id": "tensei_shitara_slime_datta_ken_ova",
+        "name": "Tensei shitara Slime Datta Ken OVA",
+        "status": "Watching",
+        "rating": 5,
+        "episodes_watched": "4 / 5"
+      },
+      {
+        "id": "tensei_shitara_slime_datta_ken_kanwa_veldora_nikki",
+        "name": "Tensei shitara Slime Datta Ken: Kanwa - Veldora Nikki",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "the_god_of_high_school",
+        "name": "The God of High School",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 13"
+      },
+      {
+        "id": "the_last_naruto_the_movie",
+        "name": "The Last: Naruto the Movie",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "to_love_ru",
+        "name": "To LOVE-Ru",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "2 / 26"
+      },
+      {
+        "id": "toki_wo_kakeru_shoujo",
+        "name": "Toki wo Kakeru Shoujo",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 1"
+      },
+      {
+        "id": "tokyo_ghoul",
+        "name": "Tokyo Ghoul",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "tokyo_ghoul_a",
+        "name": "Tokyo Ghoul √A",
+        "status": "Completed",
+        "rating": 4,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "tokyo_ghoul_re",
+        "name": "Tokyo Ghoul:re",
+        "status": "Completed",
+        "rating": 4,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "tokyo_ghoul_re_2nd_season",
+        "name": "Tokyo Ghoul:re 2nd Season",
+        "status": "Completed",
+        "rating": 4,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "tongari_boushi_no_atelier",
+        "name": "Tongari Boushi no Atelier",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "tonikaku_kawaii",
+        "name": "Tonikaku Kawaii",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "tonikaku_kawaii_seifuku",
+        "name": "Tonikaku Kawaii: Seifuku",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "tonikaku_kawaii_sns",
+        "name": "Tonikaku Kawaii: SNS",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "toradora",
+        "name": "Toradora!",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "25 / 25"
+      },
+      {
+        "id": "tsuihou_sareta_tensei_juukishi_wa_game_chishiki_de_musou_suru",
+        "name": "Tsuihou sareta Tensei Juukishi wa Game Chishiki de Musou suru",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "4 / 26"
+      },
+      {
+        "id": "tsurezure_children",
+        "name": "Tsurezure Children",
+        "status": "Completed",
+        "rating": 4,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "tsuujou_kougeki_ga_zentai_kougeki_de_ni_kai_kougeki_no_okaasan_wa_suki_desu_ka",
+        "name": "Tsuujou Kougeki ga Zentai Kougeki de Ni-kai Kougeki no Okaasan wa Suki desu ka?",
+        "status": "Completed",
+        "rating": 4,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "tsuujou_kougeki_ga_zentai_kougeki_de_ni_kai_kougeki_no_okaasan_wa_suki_desu_ka_namiuchigiwa_no_okaasan_wa_suki_desu_ka",
+        "name": "Tsuujou Kougeki ga Zentai Kougeki de Ni-kai Kougeki no Okaasan wa Suki desu ka? Namiuchigiwa no Okaasan wa Suki desu ka?",
+        "status": "Completed",
+        "rating": 2,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "uchi_no_ko_no_tame_naraba_ore_wa_moshikashitara_maou_mo_taoseru_kamo_shirenai",
+        "name": "Uchi no Ko no Tame naraba, Ore wa Moshikashitara Maou mo Taoseru kamo Shirenai.",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "uzaki_chan_wa_asobitai",
+        "name": "Uzaki-chan wa Asobitai!",
+        "status": "Dropped",
+        "rating": 0,
+        "episodes_watched": "5 / 12"
+      },
+      {
+        "id": "vinland_saga",
+        "name": "Vinland Saga",
+        "status": "Completed",
+        "rating": 10,
+        "episodes_watched": "24 / 24"
+      },
+      {
+        "id": "watashi_ga_motenai_no_wa_dou_kangaetemo_omaera_ga_warui",
+        "name": "Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 12"
+      },
+      {
+        "id": "watashi_nouryoku_wa_heikinchi_de_tte_itta_yo_ne",
+        "name": "Watashi, Nouryoku wa Heikinchi de tte Itta yo ne!",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "wonder_egg_priority",
+        "name": "Wonder Egg Priority",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "wonder_egg_priority_watashi_no_priority",
+        "name": "Wonder Egg Priority: Watashi no Priority",
+        "status": "Completed",
+        "rating": 3,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "working",
+        "name": "Working!!",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 13"
+      },
+      {
+        "id": "yahari_ore_no_seishun_love_comedy_wa_machigatteiru",
+        "name": "Yahari Ore no Seishun Love Comedy wa Machigatteiru.",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "yakusoku_no_neverland",
+        "name": "Yakusoku no Neverland",
+        "status": "Completed",
+        "rating": 7,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "yakusoku_no_neverland_2nd_season",
+        "name": "Yakusoku no Neverland 2nd Season",
+        "status": "Dropped",
+        "rating": 0,
+        "episodes_watched": "3 / 11"
+      },
+      {
+        "id": "yani_neko",
+        "name": "Yani Neko",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "5 / 0"
+      },
+      {
+        "id": "yesterday_wo_utatte",
+        "name": "Yesterday wo Utatte",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 12"
+      },
+      {
+        "id": "yofukashi_no_uta",
+        "name": "Yofukashi no Uta",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "youjo_senki",
+        "name": "Youjo Senki",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "youjo_senki_ii",
+        "name": "Youjo Senki II",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "3 / 12"
+      },
+      {
+        "id": "youjo_senki_movie",
+        "name": "Youjo Senki Movie",
+        "status": "Completed",
+        "rating": 8,
+        "episodes_watched": "1 / 1"
+      },
+      {
+        "id": "youkoso_jitsuryoku_shijou_shugi_no_kyoushitsu_e",
+        "name": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "9 / 12"
+      },
+      {
+        "id": "yuusha_party_ni_kawaii_ko_ga_ita_node_kokuhaku_shitemita",
+        "name": "Yuusha Party ni Kawaii Ko ga Ita node, Kokuhaku shitemita.",
+        "status": "Completed",
+        "rating": 5,
+        "episodes_watched": "13 / 13"
+      },
+      {
+        "id": "zankyou_no_terror",
+        "name": "Zankyou no Terror",
+        "status": "Watching",
+        "rating": 0,
+        "episodes_watched": "5 / 11"
+      },
+      {
+        "id": "zettai_karen_children_the_unlimited_hyoubu_kyousuke",
+        "name": "Zettai Karen Children: The Unlimited - Hyoubu Kyousuke",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 12"
+      },
+      {
+        "id": "zombieland_saga",
+        "name": "Zombieland Saga",
+        "status": "Completed",
+        "rating": 6,
+        "episodes_watched": "12 / 12"
+      },
+      {
+        "id": "zombieland_saga_movie_yumeginga_paradise",
+        "name": "Zombieland Saga Movie: Yumeginga Paradise",
+        "status": "Plan to Watch",
+        "rating": 0,
+        "episodes_watched": "0 / 1"
+      },
+      {
+        "id": "zombieland_saga_revenge",
+        "name": "Zombieland Saga Revenge",
+        "status": "Completed",
+        "rating": 0,
+        "episodes_watched": "12 / 12"
+      }
   ]
 }
