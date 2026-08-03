@@ -63,12 +63,12 @@
 
 
 .carousel-card {
-    height: 20vh;
-    width: auto;
-    flex: 0 0 auto; /* This is crucial */
+    width: clamp(180px, 22vw, 260px);
 }
 
 .carousel-card img {
-    height: 80%;
-    width: auto;
+    width: 100%;
+    height: 120px;      /* or whatever height looks good */
+    object-fit: contain;
+    object-position: center;
 }

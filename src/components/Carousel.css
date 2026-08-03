@@ -1,67 +1,38 @@
 .carousel {
   width: 100%;
-  margin-bottom: 2rem;
   position: relative;
 }
 
-.carousel-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin: 0 0 0.5rem 0.5rem;
-}
-
-/* Container for scroll area and buttons */
 .carousel-container {
-  height: 20vh;
-  position: relative;
+    position: relative;
+    padding: 0.25rem 0;
+}
+
+.keen-slider {
+    padding: 0.5rem 2.5rem;
+}
+
+.keen-slider__slide {
+  width: auto !important;
   display: flex;
-  align-items: center;
-  overflow: hidden;
+  justify-content: center;
 }
 
-/* Scrollable area for items */
-.carousel-scroll-area {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  gap: 0.5rem;
-  padding: 0 1rem;
-  scrollbar-width: none;
-  touch-action: pan-x;
-  -webkit-overflow-scrolling: touch;
-
-  /* ✅ Snap settings */
-  scroll-snap-type: x mandatory;
-}
-
-.carousel-scroll-area::-webkit-scrollbar {
-  display: none;
-}
-
-/* ✅ Make each child snap to the center */
-.carousel-scroll-area > * {
-  scroll-snap-align: center;
-}
-
-/* Scroll buttons */
 .scroll-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 0.75rem;
-  font-size: 1.5rem;
-  display: none;
-  transition: background-color 0.3s ease;
-}
+  z-index: 20;
 
-.scroll-button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  cursor: pointer;
 }
 
 .scroll-button.left {
@@ -72,91 +43,36 @@
   right: 0;
 }
 
-/* Show buttons on desktop hover */
-.carousel-container:hover .scroll-button {
-  display: block;
+.scroll-button:disabled {
+  opacity: 0.3;
+  cursor: default;
 }
 
-/* Shadow fades */
-.carousel-container::before,
-.carousel-container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 40px;
-  pointer-events: none;
-  z-index: 5;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.carousel-container::before {
-  left: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent);
-}
-
-.carousel-container::after {
-  right: 0;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.6), transparent);
-}
-
-.carousel-container.fade-left::before {
-  opacity: 1;
-}
-
-.carousel-container.fade-right::after {
-  opacity: 1;
-}
-
-/* Pagination Dots */
 .carousel-pagination {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
-.carousel-pagination .dot {
+.dot {
   display: inline-block;
-  height: 10px;
   width: 10px;
+  height: 10px;
   margin: 0 5px;
-  background-color: #333;
   border-radius: 50%;
+  background: #444;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.carousel-pagination .dot.active {
-  background-color: #bbb;
+.dot.active {
+  background: #ddd;
 }
 
-/* Mobile adjustments */
 @media (max-width: 768px) {
-  .carousel {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+  .scroll-button {
+    display: none;
   }
 
-  /* Hide navigation buttons completely on mobile */
-  .scroll-button,
-  .carousel-container:hover .scroll-button {
-    display: none !important;
-  }
-
-  .carousel-title {
-    font-size: 1rem;
-    margin-left: 1rem;
-  }
-
-  .carousel-scroll-area {
-    gap: 0.25rem;
-    padding: 0 0.5rem;
-    overflow-x: auto;
-  }
-
-  /* Make dots easier to tap on mobile */
-  .carousel-pagination .dot {
-    height: 14px;
-    width: 14px;
+  .keen-slider {
+    padding: 0;
   }
 }
