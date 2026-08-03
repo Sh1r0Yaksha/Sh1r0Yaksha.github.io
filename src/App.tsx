@@ -2,6 +2,7 @@ import { Routes, Route, HashRouter } from "react-router-dom";
 import Layout from "./layouts/Layout";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import Publications from "./pages/Publications";
 import Wanderings from "./pages/Wanderings";
 import NotFound from "./pages/NotFound";
 import Random from "./pages/Random";
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="publications" element={<Publications />} />
           <Route path="wanderings" element={<Wanderings />} />
           <Route path="wanderings/:slug" element={<TravelBlog />} />
           <Route path="random" element={<Random />} />

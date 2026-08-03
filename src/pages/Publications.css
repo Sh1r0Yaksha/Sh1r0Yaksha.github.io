@@ -1,0 +1,16 @@
+.bracket-list {
+    list-style: none;      /* Remove default numbering */
+    counter-reset: item;   /* Create a custom counter */
+    padding-left: 2.5em;
+}
+
+.bracket-list li {
+    counter-increment: item;
+}
+
+.bracket-list li::before {
+    content: "[" counter(item) "] ";
+    margin-left: -2.5em;
+    width: 2.5em;
+    display: inline-block;
+}
