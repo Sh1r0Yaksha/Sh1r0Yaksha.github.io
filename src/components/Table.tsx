@@ -27,7 +27,6 @@ type SortOrder = 'asc' | 'desc';
 const Table: React.FC<{ jsonData: TableData; pageSize?: number, isOnPage?: boolean}> = ({
   jsonData,
   pageSize = 9,
-  isOnPage = false,
 }) => {
 
   const {type, columns, rows } = jsonData;
