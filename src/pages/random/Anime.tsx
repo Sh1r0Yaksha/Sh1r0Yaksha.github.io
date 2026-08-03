@@ -15,7 +15,7 @@ export default function Anime() {
                     </p>
             </Header_text>
             
-            <Table jsonData={AnimeJSON} initialVisibleRows={5} href="" isOnPage={true} />
+            <Table jsonData={AnimeJSON} pageSize={50} isOnPage={true} />
         </>
     )
 }

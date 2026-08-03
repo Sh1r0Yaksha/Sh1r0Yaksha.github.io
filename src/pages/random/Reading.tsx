@@ -15,7 +15,7 @@ export default function Reading() {
                     </p>
             </Header_text>    
             
-            <Table jsonData={ReadingJSON} initialVisibleRows={5} href="" isOnPage={true} />
+            <Table jsonData={ReadingJSON} pageSize={50} isOnPage={true} />
         </>
     )
 }

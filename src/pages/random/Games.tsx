@@ -15,7 +15,7 @@ export default function Games() {
                     </p>
             </Header_text>    
             
-            <Table jsonData={GamesJSON} initialVisibleRows={5} href="" isOnPage={true} />
+            <Table jsonData={GamesJSON} pageSize={50} isOnPage={true} />
         </>
     )
 }

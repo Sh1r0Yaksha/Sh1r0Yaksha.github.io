@@ -15,7 +15,7 @@ export default function Movies() {
                     </p>
             </Header_text>    
             
-            <Table jsonData={MoviesJSON} initialVisibleRows={5} href="" isOnPage={true} />
+            <Table jsonData={MoviesJSON} pageSize={50} isOnPage={true} />
         </>
     )
 }

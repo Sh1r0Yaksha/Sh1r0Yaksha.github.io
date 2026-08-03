@@ -91,8 +91,7 @@ export default function Random() {
         </Header_text>
         <Table
           jsonData={moviesJSON}
-          initialVisibleRows={9}
-          href="/random/movies"
+          pageSize={9}
         />
       </Section>
 
@@ -104,8 +103,7 @@ export default function Random() {
         </Header_text>
         <Table
           jsonData={gamesJSON}
-          initialVisibleRows={9}
-          href="/random/games"
+          pageSize={9}
         />
       </Section>
 
@@ -117,8 +115,7 @@ export default function Random() {
         </Header_text>
         <Table
           jsonData={animeJSON}
-          initialVisibleRows={9}
-          href="/random/anime"
+          pageSize={9}
         />
       </Section>
 
@@ -130,8 +127,7 @@ export default function Random() {
         </Header_text>
         <Table
           jsonData={readingJSON}
-          initialVisibleRows={9}
-          href="/random/reading"
+          pageSize={9}
         />
       </Section>
 

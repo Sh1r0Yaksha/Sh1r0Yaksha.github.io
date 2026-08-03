@@ -37,11 +37,16 @@
 }
 
 .custom-table tbody tr {
-    height: 56px;
+    min-height: 56px;
+    cursor: pointer;
+}
+
+.custom-table tbody tr:hover {
+    background-color: var(--hover-bg);
 }
 
 .custom-table tbody td {
-    height: 56px;
+    min-height: 56px;
     vertical-align: middle;
 }
 
@@ -106,19 +111,48 @@
 }
 
 .view-more-button {
-    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 0;
     padding: 10px 18px;
     font-size: 0.9rem;
+    line-height: 1;
+
     background-color: var(--accent);
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.12s ease,
+        box-shadow 0.12s ease;
 }
 
 .view-more-button:hover {
     background-color: var(--accent-hover);
+}
+
+.view-more-button:hover:not(:disabled) {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.view-more-button:active:not(:disabled) {
+    transform: translateY(1px) scale(0.96);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.view-more-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: var(--border-color);
+    transform: none;
+    box-shadow: none;
 }
 
 /* Optional attribution if needed */
@@ -128,18 +162,22 @@
 
 .table-pagination {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     gap: 16px;
 
-    margin-top: 1rem;
+    margin-top: 1em;
 }
 
 .page-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     color: var(--text-light);
     font-weight: 600;
     min-width: 120px;
-    text-align: center;
+    height: 100%;
 }
 
 .view-more-button:disabled {
@@ -183,6 +221,7 @@
 
     .table-pagination {
         gap: 8px;
+        margin-bottom: 1em;
     }
 
     .page-indicator {

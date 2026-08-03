@@ -24,9 +24,9 @@ interface TableData {
 
 type SortOrder = 'asc' | 'desc';
 
-const Table: React.FC<{ jsonData: TableData; initialVisibleRows?: number, href: string, isOnPage?: boolean}> = ({
+const Table: React.FC<{ jsonData: TableData; pageSize?: number, isOnPage?: boolean}> = ({
   jsonData,
-  initialVisibleRows = 5,
+  pageSize = 9,
   isOnPage = false,
 }) => {
 
@@ -35,8 +35,6 @@ const Table: React.FC<{ jsonData: TableData; initialVisibleRows?: number, href: 
   const navigate = useNavigate();
   const location = useLocation();
 
-
-  const pageSize = isOnPage ? 7 : initialVisibleRows;
   const [currentPage, setCurrentPage] = useState(0);
   const [sortColumn, setSortColumn] = useState<string | null>(null);
   const [sortOrder, setSortOrder] = useState<SortOrder>('asc');
