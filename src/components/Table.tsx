@@ -27,7 +27,6 @@ type SortOrder = 'asc' | 'desc';
 const Table: React.FC<{ jsonData: TableData; initialVisibleRows?: number, href: string, isOnPage?: boolean}> = ({
   jsonData,
   initialVisibleRows = 5,
-  href,
   isOnPage = false,
 }) => {
 
@@ -37,12 +36,10 @@ const Table: React.FC<{ jsonData: TableData; initialVisibleRows?: number, href: 
   const location = useLocation();
 
 
-  const [visibleRows, setVisibleRows] = useState(initialVisibleRows);
+  const pageSize = isOnPage ? 7 : initialVisibleRows;
+  const [currentPage, setCurrentPage] = useState(0);
   const [sortColumn, setSortColumn] = useState<string | null>(null);
   const [sortOrder, setSortOrder] = useState<SortOrder>('asc');
-  const [startingIndex, setStartingIndex] = useState(0);
-
-  const maxVisibleRows: number = isOnPage ? 7 : 9;
 
   const handleSortClick = (columnKey: string) => {
     if (sortColumn === columnKey) {
@@ -74,6 +71,23 @@ const Table: React.FC<{ jsonData: TableData; initialVisibleRows?: number, href: 
       ? String(valA).localeCompare(String(valB))
       : String(valB).localeCompare(String(valA));
   });
+
+  const totalPages = Math.ceil(rows.length / pageSize);
+
+  const displayedRows = sortedData.slice(
+    currentPage * pageSize,
+    (currentPage + 1) * pageSize
+  );
+
+  const emptyRows = pageSize - displayedRows.length;
+
+  const handleNextPage = () => {
+    setCurrentPage(prev => Math.min(prev + 1, totalPages - 1));
+  };
+
+  const handlePreviousPage = () => {
+    setCurrentPage(prev => Math.max(prev - 1, 0));
+  };
 
   const getSortIcon = (col: string) => {
     if (sortColumn === col) {
@@ -110,8 +124,7 @@ const Table: React.FC<{ jsonData: TableData; initialVisibleRows?: number, href: 
           </tr>
         </thead>
         <tbody>
-          
-          {sortedData.slice(startingIndex, startingIndex + visibleRows).map((row, index) => (
+          {displayedRows.map((row, index) => (
             <tr key={index}
               onClick={() => {handleItemClick(type, row['id'])}}>
               {columns.map(col => (
@@ -119,37 +132,41 @@ const Table: React.FC<{ jsonData: TableData; initialVisibleRows?: number, href: 
               ))}
             </tr>
           ))}
+          {Array.from({ length: emptyRows }).map((_, index) => (
+              <tr
+                  key={`empty-${index}`}
+                  className="empty-row"
+              >
+                  {columns.map(col => (
+                      <td key={col.key}>&nbsp;</td>
+                  ))}
+              </tr>
+          ))}
         </tbody>
       </table>
-      {(visibleRows < rows.length) && (
-        <button className="view-more-button" 
-                onClick={
-                    () => {
-                        if (isOnPage) {
-                          if (visibleRows < maxVisibleRows)
-                            setVisibleRows(maxVisibleRows)
-                          else {
-                           setStartingIndex((prev) => {
-                              if (prev + maxVisibleRows < rows.length)
-                                return (prev + maxVisibleRows)
-                              else
-                                return 0
-                           } )
-                          }
-                        }
-                        else {
-                          if (visibleRows < maxVisibleRows)
-                            setVisibleRows(prev => (prev + initialVisibleRows))
-                          else
-                            navigate(href)
-                        }
-                    }
-                        
-                    }>
-          View More
-        </button>
-      )
-      }
+      {rows.length > pageSize && (
+        <div className="table-pagination">
+          <button
+            className="view-more-button"
+            onClick={handlePreviousPage}
+            disabled={currentPage === 0}
+          >
+            ◀ Previous
+          </button>
+
+          <span className="page-indicator">
+            Page {currentPage + 1} of {totalPages}
+          </span>
+
+          <button
+            className="view-more-button"
+            onClick={handleNextPage}
+            disabled={currentPage === totalPages - 1}
+          >
+            Next ▶
+          </button>
+        </div>
+      )}
     </div>
   );
 };
